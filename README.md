@@ -22,7 +22,7 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 |202400913|ANA LUÍSA PERERIRA DOS SANTOS|[AnaLuisaps07](https://github.com/AnaLuisaPS07)|
 |202403083|LUIS VITTOR FERREIRA NUNES|[LuisVittor](https://github.com/LuisVittor)|
 |202403087|MATHEUS FAGUNDES SOARES|[<usuario_github>](https://github.com/FagundesMatheus)|
-|2024403079|KESLEY SOARES DA SILVA|[/Noktowl](https://github.com/Noktowl)|
+|202403079|KESLEY SOARES DA SILVA|[/Noktowl](https://github.com/Noktowl)|
 
 ### Backlog do Produto
 
@@ -78,9 +78,9 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
-|1|Definição do grupo de trabalho|30/08/2024|30/08/2024|Grupo|Concluída|
-|1|Definição do Tema do Trabalho|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Definição do Backlog do produto|13/09/2024|27/09/2024|Grupo|Programada|
+|1|Definição do grupo de trabalho|30/08/2024|30/08/2024|Grupo|Concluída✅|
+|1|Definição do Tema do Trabalho|30/08/2024|13/09/2024|Grupo|Concluída✅|
+|2|Definição do Backlog do produto|13/09/2024|27/09/2024|Grupo|Concluída✅|
 |2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
