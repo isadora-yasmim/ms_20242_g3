@@ -19,7 +19,7 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
 |202403076|ISADORA YASMIM DA SILVA|[isadora-yasmim](https://github.com/isadora-yasmim)|
-|202400913|ANA LUÍSA PERERIRA DOS SANTOS|[AnaLuisaps07](https://github.com/AnaLuisaPS07)|
+|202400913|ANA LUÍSA PERERIRA DOS SANTOS|[AnaLuisaPS07](https://github.com/AnaLuisaPS07)|
 |202403083|LUIS VITTOR FERREIRA NUNES|[LuisVittor](https://github.com/LuisVittor)|
 |202403087|MATHEUS FAGUNDES SOARES|[<usuario_github>](https://github.com/FagundesMatheus)|
 |202403079|KESLEY SOARES DA SILVA|[/Noktowl](https://github.com/Noktowl)|
@@ -78,7 +78,7 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
-|1|Definição do grupo de trabalho|01/09/2024|03/08/2024|Grupo|Concluída✅|
+|1|Definição do grupo de trabalho|01/09/2024|03/09/2024|Grupo|Concluída✅|
 |1|Definição do Tema do Trabalho|01/09/2024|03/09/2024|Grupo|Concluída✅|
 |2|Definição do Backlog do produto|10/09/2024|10/09/2024|Grupo|Concluída✅|
 |2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
