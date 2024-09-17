@@ -21,7 +21,7 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 |202403076|ISADORA YASMIM DA SILVA|[isadora-yasmim](https://github.com/isadora-yasmim)|
 |202400913|ANA LUÍSA PERERIRA DOS SANTOS|[AnaLuisaps07](https://github.com/AnaLuisaPS07)|
 |202403083|LUIS VITTOR FERREIRA NUNES|[LuisVittor](https://github.com/LuisVittor)|
-|?|MATHEUS FAGUNDES SOARES|[<usuario_github>](https://github.com/<usuario_github>)|
+|?|MATHEUS FAGUNDES SOARES|[<usuario_github>](https://github.com/FagundesMatheus)|
 |2024403079|KESLEY SOARES DA SILVA|[/Noktowl](https://github.com/Noktowl)|
 
 ### Backlog do Produto
