@@ -1,5 +1,5 @@
 ### ms_20242_g3
-Repositório definido para a manutenção do controle de versão dos artefatos do projeto de do Grupo 1, da Disciplina de Domínios de Software, no semestre 2024-2.
+Repositório definido para a manutenção do controle de versão dos artefatos do projeto de do Grupo 3, da Disciplina de Modelagem de Software, no semestre 2024-2.
 
 ### Nome do Projeto:
 Informar o nome do projeto
