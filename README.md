@@ -32,25 +32,20 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 
 ### Backlog do Produto
 
-1. RF001 - <Sistema de cadastro e autenticação de usuários.
->.
-2. RF002 - <Integração com APIs externas para catalogação de filmes.
->.
+1. RF001 - <Sistema de cadastro e autenticação de usuários.>.
+2. RF002 - <Integração com APIs externas para catalogação de filmes.>.
 3. RF003 - <Função para recomendar filmes com base em critérios(filtros) escolhidos pelo usuário - seleciona os filmes pertencentes àquela união e aleatoriamente escolhe um dentre eles.>.
 4. RF004 - <Função para recomendar filmes de forma completamente aleatória.>.
-5. RF005 - <Função para recomendar filmes que mais se aproximam dos filmes selecionados pelo usuário - ele escolhe X filmes, com base na intersecção dos traços desses X filmes, a ferramenta escolhe o que atende mais fielmente esse conjunto de características.
->.
+5. RF005 - <Função para recomendar filmes que mais se aproximam dos filmes selecionados pelo usuário - ele escolhe X filmes, com base na intersecção dos traços desses X filmes, a ferramenta escolhe o que atende mais fielmente esse conjunto de características.>.
 6. RF006 - <Descrição do Requisito>.
 
 ### Requisitos Não Funcionais
 
-1. RNF001 - Usabilidade: <Interface intuitiva e amigável para facilitar a navegação.
->.
+1. RNF001 - Usabilidade: <Interface intuitiva e amigável para facilitar a navegação.>.
 2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
-3. RNF003 - Desempenho: <Respostas rápidas nas buscas e recomendações (Ex: tempo de resposta < 2 segundos)>..
+3. RNF003 - Desempenho: <Respostas rápidas nas buscas e recomendações (Ex: tempo de resposta menor que 2 segundos)>..
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
-5. RNF005 - Manutenibilidade: <Código bem estruturado e documentado para facilitar futuras manutenções e expansões.
->.
+5. RNF005 - Manutenibilidade: <Código bem estruturado e documentado para facilitar futuras manutenções e expansões.>.
 6. RNF006 - Portabilidade: <Descrição do Requisito não Funcional>.
 7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
 8. RNF007 - Escalabilidade: <Capacidade de suportar aumento de usuários e dados sem perda de performance.>.
@@ -72,7 +67,7 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 <Apresentar uma descrição sucinta do modelo de persistência do Produto.>
 
 ### Local do _Deploy_
-O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Firebase do Google, sendo crucial para nossa escolha a facilidade de configuração e também os recursos ofertados na versão gratuita.
+
 
 ### Cronograma de Desenvolvimento
 
@@ -93,7 +88,7 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |1|Definição do grupo de trabalho|01/09/2024|03/09/2024|Grupo|Concluída✅|
 |1|Definição do Tema do Trabalho|01/09/2024|03/09/2024|Grupo|Concluída✅|
 |2|Definição do Backlog do produto|10/09/2024|10/09/2024|Grupo|Concluída✅|
-|2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
+|2|Especificação das histórias de usuário|13/09/2024|24/09/2024|Grupo|Programada|
 |2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
 |2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
 |3|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
