@@ -1,20 +1,26 @@
 ### ms_20242_g3
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto de do Grupo 3, da Disciplina de Modelagem de Software, no semestre 2024-2.
 
-### Nome do Projeto:
-Informar o nome do projeto
+### Nome do Projeto: 
+KlimaX
 
-### Descrição:
-Descrever o projeto
+### Descrição: 
+Nosso projeto será uma plataforma online de recomendação de filmes, focada em oferecer sugestões personalizadas com base nos gostos e preferências do usuário. A plataforma permitirá a busca de filmes por meio da seleção de tags, proporcionando uma forma interativa e precisa de filtrar resultados. Além disso, contará com opções de recomendações totalmente aleatórias para quem deseja explorar novos conteúdos de forma descompromissada, e também permitirá sugerir filmes semelhantes a um ou mais títulos selecionados pelo usuário.
 
-### Problema
-Descrever o projeto
+
+### Problema:
+Atualmente, apesar da abundância de plataformas de streaming e comunidades sobre filmes, muitos usuários ainda enfrentam dificuldades em encontrar recomendações que realmente atendam aos seus gostos pessoais. A maioria dessas plataformas utiliza algoritmos de recomendação baseados principalmente em dados como o histórico de visualizações, popularidade, e avaliações gerais dos filmes, o que muitas vezes resulta em recomendações genéricas e repetitivas.
+
+O problema central é que essas plataformas geralmente não capturam detalhes mais profundos sobre os gostos individuais. Por exemplo, um usuário pode gostar de filmes de aventura, mas preferir narrativas que tenham personagens complexos ou cenários contemporâneos em vez de produções de época. Um sistema de recomendação eficaz deveria entender preferências sutis como a aversão a filmes do século XX, o gosto por enredos mais atuais ou um interesse por temas específicos, como comédias leves ou protagonismo feminino.
+
+Além disso, as recomendações muitas vezes não levam em conta o estado emocional ou o contexto do usuário no momento da escolha. Um dia, alguém pode querer um filme leve e descontraído, enquanto em outro momento pode preferir algo mais reflexivo ou emocionante. Sem considerar essas variações, as plataformas perdem a chance de oferecer uma experiência personalizada e dinâmica.
+
 
 ### Objetivos da Solução
 Descrever os objetivos da solução
 
 ### Grupo
-Este projeto será desenvolvido pelos componentes do grupo 1:
+Este projeto será desenvolvido pelos componentes do grupo 3:
 
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
@@ -26,25 +32,31 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 ### Backlog do Produto
 
-1. RF001 - <Descrição do Requisito>.
-2. RF002 - <Descrição do Requisito>.
-3. RF003 - <Descrição do Requisito>.
-4. RF004 - <Descrição do Requisito>.
-5. RF005 - <Descrição do Requisito>.
+1. RF001 - <Sistema de cadastro e autenticação de usuários.
+>.
+2. RF002 - <Integração com APIs externas para catalogação de filmes.
+>.
+3. RF003 - <Função para recomendar filmes com base em critérios(filtros) escolhidos pelo usuário - seleciona os filmes pertencentes àquela união e aleatoriamente escolhe um dentre eles.>.
+4. RF004 - <Função para recomendar filmes de forma completamente aleatória.>.
+5. RF005 - <Função para recomendar filmes que mais se aproximam dos filmes selecionados pelo usuário - ele escolhe X filmes, com base na intersecção dos traços desses X filmes, a ferramenta escolhe o que atende mais fielmente esse conjunto de características.
+>.
 6. RF006 - <Descrição do Requisito>.
 
 ### Requisitos Não Funcionais
 
-1. RNF001 - Usabilidade: <Descrição do Requisito não Funcional>.
+1. RNF001 - Usabilidade: <Interface intuitiva e amigável para facilitar a navegação.
+>.
 2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
-3. RNF003 - Desempenho: <Descrição do Requisito não Funcional>..
+3. RNF003 - Desempenho: <Respostas rápidas nas buscas e recomendações (Ex: tempo de resposta < 2 segundos)>..
 4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
-5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
+5. RNF005 - Manutenibilidade: <Código bem estruturado e documentado para facilitar futuras manutenções e expansões.
+>.
 6. RNF006 - Portabilidade: <Descrição do Requisito não Funcional>.
 7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
+8. RNF007 - Escalabilidade: <Capacidade de suportar aumento de usuários e dados sem perda de performance.>.
 
 ### Regras de Negócio
-1. RN01 - <Descrição da Regra de Negócio>.
+1. RN01 - <Atender as diretrizes da LGPD>.
 2. RN02 - <Descrição da Regra de Negócio>.
 3. RN03 - <Descrição da Regra de Negócio>.
 4. RN04 - <Descrição da Regra de Negócio>.
