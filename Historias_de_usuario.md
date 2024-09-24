@@ -141,6 +141,7 @@ Alta
 - Integração com uma API que contenha a base dados dos filmes.
 - Desenvolvimento da interface inicial da plataforma.
 
+### **Notas/Comentários Adicionais:**
 ___
 ___
 ### **ID:** 
@@ -233,6 +234,7 @@ baixa
 - Recomendação de filmes que mais se aproximam dos filmes selecionados pelo usuário(HU-003)
 - Recomendar filmes com base nos critérios do usuário(HU-001)
  
+### **Notas/Comentários Adicionais:**
 ___
 ___
 ### **ID:**  
@@ -281,7 +283,8 @@ Média
 - Caso o usuário já seja cadastrado, haverá uma pequena alteração na iluminação da imagem do filme para indicar que o usuário já assistiu a determinada obra.  
 - Catálogos de filmes premiados e indicações da administração também estarão na plataforma.
 
-=======
+___
+___
 
 HU-005
 
@@ -417,7 +420,6 @@ Média
 - Desenvolvimento da interface inicial da plataforma.
  
 ### **Notas/Comentários Adicionais:**
-
 
 
 ___
