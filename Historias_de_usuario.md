@@ -333,13 +333,13 @@ Como **usuário cadastrado**, eu quero **editar as informações do meu perfil**
 - **Quando** clicar em "Cancelar",
 - **Então** o sistema deve descartar todas as alterações e retornar às informações originais do perfil sem salvá-las.
 
-### Prioridade:
+### **Prioridade**:
 Média
 
-### Estimativa de Esforço:
+### **Estimativa de Esforço:**  
 ??
 
-## Dependências:
+### **Dependências:** 
 - Criação de perfil de usuário (História HU-004).
 - Banco de dados de usuários armazenando as informações de perfil.
 - Desenvolvimento da interface inicial da plataforma.
