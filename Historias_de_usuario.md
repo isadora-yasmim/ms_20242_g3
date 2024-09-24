@@ -134,7 +134,51 @@ Alta
 ??
  
 ### **Dependências:** 
-- Integração com uma API que contenha a base dados dos filmes.
+
+<hr style="width: 80%; height: 2px; background-color: black; border: none;">
+
+### **ID:**
+HU-008
+
+### **Título:**
+Editar perfil do usuário
+
+### **Descrição:**
+Como **usuário cadastrado**, eu quero **editar as informações do meu perfil**, para que **eu possa manter meus dados pessoais atualizados e personalizar minha experiência na plataforma.**
+
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Atualizar informações básicas
+- **Dado** que o usuário acessou a página de perfil,
+- **Quando** clicar na opção de "Editar Perfil",
+- **Então** o sistema deve permitir a edição de informações como nome, foto de perfil, data de nascimento, e preferências de gênero cinematográfico.
+  
+#### Cenário 2: Confirmar e salvar alterações
+- **Dado** que o usuário editou as informações do perfil,
+- **Quando** clicar em "Salvar",
+- **Então** o sistema deve validar as informações inseridas,
+- **E** exibir uma mensagem de sucesso após a atualização.
+
+#### Cenário 3: Exibir mensagem de erro para dados inválidos
+- **Dado** que o usuário inseriu informações inválidas (como data de nascimento incoerente),
+- **Quando** clicar em "Salvar",
+- **Então** o sistema deve exibir uma mensagem de erro indicando os campos inválidos que precisam ser corrigidos.
+  
+#### Cenário 4: Cancelar alterações
+- **Dado** que o usuário está editando seu perfil,
+- **Quando** clicar em "Cancelar",
+- **Então** o sistema deve descartar todas as alterações e retornar às informações originais do perfil sem salvá-las.
+
+ 
+### Prioridade:
+Média
+
+### Estimativa de Esforço:
+??
+
+## Dependências:
+- Criação de perfil de usuário (História HU-004).
+- Banco de dados de usuários armazenando as informações de perfil.
 - Desenvolvimento da interface inicial da plataforma.
  
 ### **Notas/Comentários Adicionais:**
