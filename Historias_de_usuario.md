@@ -1,5 +1,45 @@
 # **Histórias de Usuário**
 
+### **ID:**
+HU-001
+
+### **Título:**
+Recomendar filmes com base nos critérios do usuário
+
+### **Descrição:** 
+Como **usuário**, eu quero **poder selecionar critérios (como gênero, classificação, duração, ano, elenco etc)** para que **o sistema recomende filmes de acordo com as minhas seleções, permitindo que eu escolha um filme que se adeque ao meu gosto.**
+
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Recomendações com filtros de critérios
+- **Dado** que o usuário está na tela de recomendações,
+- **Quando** selecionar os filtros desejados (gênero, classificação, duração, ano, etc.),
+- **E** clica em "Buscar",
+- **Então** o sistema deve exibir uma lista de filmes que correspondem aos critérios.
+
+#### Cenário 2:  Filtros sem resultados
+- **Dado** que o usuário selecionou filtros muito específicos (por exemplo, um filme com uma duração muito específica, de tal ano e com o ator x),
+- **E** clicou em buscar
+- **Então**  nenhum filme é encontrado, e o sistema deve exibir uma mensagem informando que não há filmes disponíveis com base nos critérios selecionados.
+
+#### Cenário 3 : Falha ao não selecionar nenhum filtro
+- **Dado** que o usuário está na tela de recomendações,
+- **Quando** tentar clicar em "Buscar" sem selecionar nenhum filtro,
+- **Então** o sistema deve exibir uma mensagem de alerta informando que ao menos um critério precisa ser selecionado,
+- **E** o botão de "Buscar" deve permanecer desativado até que ao menos um filtro seja escolhido.
+  
+### **Prioridade:** 
+Alta
+
+### **Estimativa de Esforço:** 
+??
+
+### **Dependências:**
+- Integração com uma API que contenha a base dados dos filmes.
+- Desenvolvimento da interface inicial da plataforma.
+
+### **Notas/Comentários Adicionais:**
+
 ___
 ___
 ### **ID:** 
@@ -241,6 +281,96 @@ Média
 - Caso o usuário já seja cadastrado, haverá uma pequena alteração na iluminação da imagem do filme para indicar que o usuário já assistiu a determinada obra.  
 - Catálogos de filmes premiados e indicações da administração também estarão na plataforma.
 
+=======
+
+HU-005
+
+### **Título:** 
+Salvar e verificar Meus Favoritos
+ 
+### **Descrição:** 
+Como **usuário cadastrado**, eu quero **poder favoritar os filmes** para que **possa consultar uma lista com meus filmes favoritos ou que mais me chamaram atenção**.
+ 
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Favoritar filme recomendado
+- **Dado** que o usuário utilizou alguma das funções de recomendação de filme
+- **Quando** o filme aparece para ele
+- **Então** ele podera apertar um botão no formato de coração ou estrela e favoritar.
+ 
+#### Cenário 2: favoritar filme do catálogo
+- **Dado** que o usuário está na página de catálogo
+- **Quando** ele clica em um filme para ver mais informações
+- **Então** deve ter, junto das informações, um botão no formato de coração ou estrela
+- **E** ele poderá apertá-lo, favoritando o filme.
+ 
+#### Cenário 3: Acesso a lista de filmes favoritos
+- **Dado** que o usuário está tela de "Perfil",
+- **OU** abre a barra lateral,
+- **Quando** ele clica no botão "Meus favoritos" - que direciona para a página de filmes favoritos,
+- **Então** Uma lista com todos os filmes favoritados pelo usuário deve aparecer
+- **E** o usuário deve ter a opção remover os filmes que não tiver mais interresse
+ 
+### **Prioridade:** 
+baixa
+ 
+### **Estimativa de Esforço:** 
+--
+ 
+### **Dependências:** 
+- Criar Perfil de Usuário(HU-004)
+- Recomendação de um filme de maneira aleatória(HU-002)
+- Recomendação de filmes que mais se aproximam dos filmes selecionados pelo usuário(HU-003)
+- Recomendar filmes com base nos critérios do usuário(HU-001)
+ 
+___
+___
+### **ID:**  
+HU-006
+
+### **Título:**  
+Catálogo de filmes
+
+### **Descrição:**  
+Como **usuário da plataforma**, eu quero **ter acesso a um catálogo de filmes** para que **me sejam recomendados diferentes tipos de filmes através de diversos critérios**.
+
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Catálogo satisfez o usuário  
+- **Dado** que o usuário está na página inicial da plataforma,  
+- **Quando** o usuário clica no botão "Catálogo" (nome passível de alterações),  
+- **Então** diferentes tipos de catálogo de filmes são apresentados para o usuário.
+
+#### Cenário 2: Catálogo não satisfez o usuário  
+- **Dado** que o usuário está na página inicial da plataforma,  
+- **Quando** o usuário clica no botão "Catálogo" (nome passível de alterações),  
+- **Então** diferentes tipos de catálogo de filmes são apresentados para o usuário,  
+- **E** o usuário clica no botão "Recarregar Catálogo" (nome passível de alterações),  
+- **Então** novos catálogos são apresentados.
+
+#### Cenário 3: Falha no carregamento do catálogo  
+- **Dado** que o usuário está na página inicial da plataforma,  
+- **Quando** o usuário clica no botão "Catálogo" (nome passível de alterações),  
+- **E** ocorre uma falha no carregamento do catálogo de filmes,  
+- **E** a mensagem "Erro no carregamento do catálogo" aparece na tela,  
+- **E** o usuário clica no botão "Recarregar Catálogo" (nome passível de alterações),  
+- **Então** o catálogo de filmes é recarregado.
+
+### **Prioridade:**  
+Média
+
+### **Estimativa de Esforço:**  
+??
+
+### **Dependências:**  
+- Integração com uma API que contenha a base de dados dos filmes.  
+- Desenvolvimento da interface inicial da plataforma.
+
+### **Notas/Comentários Adicionais:**  
+- Diferentes filmes serão apresentados no catálogo de filmes, sendo representados por uma imagem do filme, priorizando aquelas que apresentam o nome do filme na imagem.  
+- Caso o usuário já seja cadastrado, haverá uma pequena alteração na iluminação da imagem do filme para indicar que o usuário já assistiu a determinada obra.  
+- Catálogos de filmes premiados e indicações da administração também estarão na plataforma.
+
 ___
 ___
 ### **ID:**
@@ -336,4 +466,3 @@ Média
 
 ### **Notas/Comentários Adicionais:**  
 - Os filtros serão bem abrangentes, permitindo que o usuário tenha uma gama de possibilidades na hora de procurar um catálogo de filmes.
-
