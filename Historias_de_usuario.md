@@ -22,8 +22,12 @@ Como **usuário**, eu quero **poder selecionar critérios (como gênero, classif
 - **E** clicou em buscar
 - **Então**  nenhum filme é encontrado, e o sistema deve exibir uma mensagem informando que não há filmes disponíveis com base nos critérios selecionados.
 
-#### Cenário 3 : ?
-
+#### Cenário 3 : Falha ao não selecionar nenhum filtro
+- **Dado** que o usuário está na tela de recomendações,
+- **Quando** tentar clicar em "Buscar" sem selecionar nenhum filtro,
+- **Então** o sistema deve exibir uma mensagem de alerta informando que ao menos um critério precisa ser selecionado,
+- **E** o botão de "Buscar" deve permanecer desativado até que ao menos um filtro seja escolhido.
+  
 ### **Prioridade:** 
 Alta
 
@@ -31,7 +35,8 @@ Alta
 ??
 
 ### **Dependências:**
-- Integração do algoritmo de recomendação com o banco de dados(api?) que contém os filmes.
+- Integração com uma API que contenha a base dados dos filmes.
+- Desenvolvimento da interface inicial da plataforma.
 
 ### **Notas/Comentários Adicionais:**
 
@@ -138,7 +143,7 @@ Alta
 <hr style="width: 80%; height: 2px; background-color: black; border: none;">
 
 ### **ID:**
-HU-008
+HU-007
 
 ### **Título:**
 Editar perfil do usuário
@@ -169,7 +174,6 @@ Como **usuário cadastrado**, eu quero **editar as informações do meu perfil**
 - **Quando** clicar em "Cancelar",
 - **Então** o sistema deve descartar todas as alterações e retornar às informações originais do perfil sem salvá-las.
 
- 
 ### Prioridade:
 Média
 
@@ -182,5 +186,3 @@ Média
 - Desenvolvimento da interface inicial da plataforma.
  
 ### **Notas/Comentários Adicionais:**
-
-
