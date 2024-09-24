@@ -146,6 +146,7 @@ Alta
 - Integração com uma API que contenha a base dados dos filmes.
 - Desenvolvimento da interface inicial da plataforma.
 
+### **Notas/Comentários Adicionais:**
 ___
 ___
 
@@ -244,6 +245,7 @@ baixa
 - Recomendação de filmes que mais se aproximam dos filmes selecionados pelo usuário(HU-003)
 - Recomendar filmes com base nos critérios do usuário(HU-001)
  
+### **Notas/Comentários Adicionais:**
 ___
 ___
 
