@@ -7,20 +7,20 @@ HU-001
 Recomendar filmes com base nos critérios do usuário
 
 ### **Descrição:** 
-Como usuário, eu quero poder selecionar critérios (como gênero, classificação, duração, ano, elenco etc) para que o sistema recomende filmes de acordo com as minhas seleções, permitindo que eu escolha um filme que se adeque ao meu gosto.
+Como **usuário**, eu quero **poder selecionar critérios (como gênero, classificação, duração, ano, elenco etc)** para que **o sistema recomende filmes de acordo com as minhas seleções, permitindo que eu escolha um filme que se adeque ao meu gosto.**
 
 ### **Critérios de Aceitação:**
 
 #### Cenário 1: Recomendações com filtros de critérios
-Dado que o usuário está na tela de recomendações,
-Quando selecionar os filtros desejados (gênero, classificação, duração, ano, etc.),
-E clica em "Buscar",
-Então o sistema deve exibir uma lista de filmes que correspondem aos critérios.
+- **Dado** que o usuário está na tela de recomendações,
+- **Quando** selecionar os filtros desejados (gênero, classificação, duração, ano, etc.),
+- **E** clica em "Buscar",
+- **Então** o sistema deve exibir uma lista de filmes que correspondem aos critérios.
 
 #### Cenário 2:  Filtros sem resultados
-Dado que o usuário selecionou filtros muito específicos (por exemplo, um filme com uma duração muito específica, de tal ano e com o ator x),
-E clicou em buscar
-Então  nenhum filme é encontrado, e o sistema deve exibir uma mensagem informando que não há filmes disponíveis com base nos critérios selecionados.
+- **Dado** que o usuário selecionou filtros muito específicos (por exemplo, um filme com uma duração muito específica, de tal ano e com o ator x),
+- **E** clicou em buscar
+- **Então**  nenhum filme é encontrado, e o sistema deve exibir uma mensagem informando que não há filmes disponíveis com base nos critérios selecionados.
 
 #### Cenário 3 : ?
 
@@ -31,10 +31,12 @@ Alta
 ??
 
 ### **Dependências:**
-Integração do algoritmo de recomendação com o banco de dados(api?) que contém os filmes.
+- Integração do algoritmo de recomendação com o banco de dados(api?) que contém os filmes.
 
-<!--  DIVIDER  -->
-<img align="right" width="100%" src="https://github.com/lassiecoder/lassiecoder/assets/17312616/0e8c9521-a567-45d9-9a71-d2d7cf5c1d88">
+### **Notas/Comentários Adicionais:**
+
+
+<hr style="width: 80%; height: 2px; background-color: black; border: none;">
 
 
 ### **ID:** 
@@ -82,6 +84,7 @@ Alta
 - Quando um filme é recomendado sua ficha técnica e uma imagem que o represente(possivelmente a capa) devem aparecer na tela
 - No caso de o usuário ser cadastrado, ao clicar em "já assisti esse filme"(nome passível de alterações) o filme assistido será adicionado ao seu perfil para que não seja recomendado novamente.
 
+<hr style="width: 80%; height: 2px; background-color: black; border: none;">
 
 ### **ID:** 
 HU-003
