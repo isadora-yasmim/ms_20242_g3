@@ -28,7 +28,7 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 |202400913|ANA LUÍSA PEREIRA DOS SANTOS|[AnaLuisaPS07](https://github.com/AnaLuisaPS07)|
 |202403083|LUIS VITTOR FERREIRA NUNES|[LuisVittor](https://github.com/LuisVittor)|
 |202403087|MATHEUS FAGUNDES SOARES|[FagundesMatheus](https://github.com/FagundesMatheus)|
-|202403079|KESLEY SOARES DA SILVA|[/Noktowl](https://github.com/Noktowl)|
+|202403079|KESLEY SOARES DA SILVA|[Noktowl](https://github.com/Noktowl)|
 
 ### Backlog do Produto
 
