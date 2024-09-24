@@ -33,7 +33,8 @@ Alta
 ### **Dependências:**
 Integração do algoritmo de recomendação com o banco de dados(api?) que contém os filmes.
 
-
+<!--  DIVIDER  -->
+<img align="right" width="100%" src="https://github.com/lassiecoder/lassiecoder/assets/17312616/0e8c9521-a567-45d9-9a71-d2d7cf5c1d88">
 
 
 ### **ID:** 
