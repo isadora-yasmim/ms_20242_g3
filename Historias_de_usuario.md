@@ -349,6 +349,45 @@ Média
 ___
 ___
 
+# **Histórias de Usuário 8**
+
+### **ID:**
+HU-008
+
+### **Título:**
+Exibir informações importantes de filmes selecionados
+
+### **Descrição:**
+Como **usuário**, quero **ver informações relevantes sobre um filme selecionado**, para que **eu possa ter mais detalhes sobre o filme e onde assisti-lo**
+
+### **Critérios de Aceitação:**
+
+#### Cenário 1: 
+- **Dado** me foi recomendado um filme,
+- **Quando** clico no botão 'mais informações'",
+- **Então** o site me mostra informações detalhadas como, sinopse, ano de lançamento, elenco e serviços de streaming onde o filme se encontra.
+  
+#### Cenário 2: 
+- **Dado** estou no catálogo de filmes,
+- **Quando** clico na imagem do filme",
+- **Então** o site me mostra informações detalhadas como, sinopse, ano de lançamento, elenco e serviços de streaming onde o filme se encontra.
+
+### **Prioridade**:
+Média
+
+### **Estimativa de Esforço:**  
+??
+
+### **Dependências:** 
+- Desenvolvimento da interface inicial da plataforma.
+- Catálogo de Filmes disponível
+- Sistema de recomendações
+ 
+### **Notas/Comentários Adicionais:**
+
+___
+___
+
 # **Histórias de Usuário 9**
 
 ### **ID:**  
