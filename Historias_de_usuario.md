@@ -66,7 +66,7 @@ Como **usuário não cadastrado**, eu quero **ir até a aba de recomendações a
 - **Quando** o usuário clica no botão "me surpreenda"(nome passível de alterações),
 - **Então** um filme é indicado
 - **E** o usuário clica no botão "já assisti esse filme"(nome passível de alterações),
-- **Então** um filme é indicado.
+- **Então** um outro filme é indicado.
  
 #### Cenário 3: Falha na recomendação
 - **Dado** que o usuário está na página de recomendação aleatória,
@@ -123,7 +123,7 @@ Como **usuário não cadastrado**, eu quero **ir até a aba de recomendações c
 - **Dado** que o usuário está na página de recomendação com base em um ou mais filmes escolhidos,
 - **Quando** o usuário seleciona um ou mais filmes que o interessam,
 - **E** o usuário clica no botão "me recomende um filme"(nome passível de alterações),
-- **E**ocorre uma falha na indicação do filme ,
+- **E** ocorre uma falha na indicação do filme ,
 - **E** a mensagem "erro na recomendação" aparece na tela,
 - **E** o usuário seleciona novamente os filmes que o interessam,
 - **Então** o filme que mais se aproxima do(s) selecionado(s) é indicado.
@@ -163,8 +163,8 @@ Como **usuário sem cadastro**, eu quero **criar um perfil individual na platafo
  
 ### **Critérios de Aceitação:**
 
-#### Cenário 1: Conta Criada com Sucesso!
-- **Dado** que o usuário acessa a aba de "criar Conta"
+#### Cenário 1: Conta Criada com Sucesso
+- **Dado** que o usuário acessa a aba de "Criar Conta"
 - **Quando** ele preenche todos os campos corretamente
 - **E** clica em "Finalizar Cadastro"
 - **Então** os seus dados são armazenados
@@ -172,15 +172,15 @@ Como **usuário sem cadastro**, eu quero **criar um perfil individual na platafo
 - **E** ele é direcionado a página inicial já logado. 
  
 #### Cenário 2: Campo com e-mail inválido
-- **Dado** que o usuário acessa a aba de "criar Conta"
-- **Quando** ele digita um email que não possua o formato "nome_de_Usuário@nome_de_Domínio"
+- **Dado** que o usuário acessa a aba de "Criar Conta"
+- **Quando** ele digita um e-mail que não possua o formato "nome_de_Usuário@nome_de_Domínio"
 - **E** clica em "Finalizar Cadastro"
-- **Então** uma mensagem de erro deve ser exibida, informando que email possui formato inválido
+- **Então** uma mensagem de erro deve ser exibida, informando que o e-mail possui formato inválido
 - **E** o sistema deve destacar o campo de e-mail
 - **E** permitir editá-lo.
  
 #### Cenário 3: Senha e confirmação de senha em dissonância
-- **Dado** que o usuário acessa a aba de "criar Conta"
+- **Dado** que o usuário acessa a aba de "Criar Conta"
 - **Quando** ele preenche os campos "Senha" e "Confirmar de Senha"
 - **E** um campo tem conteúdo diferente do outro(estão em dissonância)
 - **Então** uma mensagem de erro deve ser exibida informando que "As senhas estão diferentes"
@@ -218,7 +218,7 @@ Como **usuário cadastrado**, eu quero **poder favoritar os filmes** para que **
 #### Cenário 1: Favoritar filme recomendado
 - **Dado** que o usuário utilizou alguma das funções de recomendação de filme
 - **Quando** o filme aparece para ele
-- **Então** ele podera apertar um botão no formato de coração ou estrela e favoritar.
+- **Então** ele poderá apertar um botão no formato de coração ou estrela e favoritar.
  
 #### Cenário 2: favoritar filme do catálogo
 - **Dado** que o usuário está na página de catálogo
@@ -292,7 +292,7 @@ Média
 - Desenvolvimento da interface inicial da plataforma.
 
 ### **Notas/Comentários Adicionais:**  
-- Diferentes filmes serão apresentados no catálogo de filmes, sendo representados por uma imagem do filme, priorizando aquelas que apresentam o nome do filme na imagem.  
+- Diferentes filmes serão apresentados no catálogo de filmes, sendo representados por uma imagem do filme, priorizando aquelas que apresentam o nome do filme na imagem(possivelmente a capa).  
 - Caso o usuário já seja cadastrado, haverá uma pequena alteração na iluminação da imagem do filme para indicar que o usuário já assistiu a determinada obra.  
 - Catálogos de filmes premiados e indicações da administração também estarão na plataforma.
 
