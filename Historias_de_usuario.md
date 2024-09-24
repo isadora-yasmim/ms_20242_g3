@@ -22,8 +22,12 @@ Como **usuário**, eu quero **poder selecionar critérios (como gênero, classif
 - **E** clicou em buscar
 - **Então**  nenhum filme é encontrado, e o sistema deve exibir uma mensagem informando que não há filmes disponíveis com base nos critérios selecionados.
 
-#### Cenário 3 : ?
-
+#### Cenário 3 : Falha ao não selecionar nenhum filtro
+- **Dado** que o usuário está na tela de recomendações,
+- **Quando** tentar clicar em "Buscar" sem selecionar nenhum filtro,
+- **Então** o sistema deve exibir uma mensagem de alerta informando que ao menos um critério precisa ser selecionado,
+- **E** o botão de "Buscar" deve permanecer desativado até que ao menos um filtro seja escolhido.
+  
 ### **Prioridade:** 
 Alta
 
@@ -31,7 +35,8 @@ Alta
 ??
 
 ### **Dependências:**
-- Integração do algoritmo de recomendação com o banco de dados(api?) que contém os filmes.
+- Integração com uma API que contenha a base dados dos filmes.
+- Desenvolvimento da interface inicial da plataforma.
 
 ### **Notas/Comentários Adicionais:**
 
@@ -134,9 +139,50 @@ Alta
 ??
  
 ### **Dependências:** 
-- Integração com uma API que contenha a base dados dos filmes.
+
+<hr style="width: 80%; height: 2px; background-color: black; border: none;">
+
+### **ID:**
+HU-007
+
+### **Título:**
+Editar perfil do usuário
+
+### **Descrição:**
+Como **usuário cadastrado**, eu quero **editar as informações do meu perfil**, para que **eu possa manter meus dados pessoais atualizados e personalizar minha experiência na plataforma.**
+
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Atualizar informações básicas
+- **Dado** que o usuário acessou a página de perfil,
+- **Quando** clicar na opção de "Editar Perfil",
+- **Então** o sistema deve permitir a edição de informações como nome, foto de perfil, data de nascimento, e preferências de gênero cinematográfico.
+  
+#### Cenário 2: Confirmar e salvar alterações
+- **Dado** que o usuário editou as informações do perfil,
+- **Quando** clicar em "Salvar",
+- **Então** o sistema deve validar as informações inseridas,
+- **E** exibir uma mensagem de sucesso após a atualização.
+
+#### Cenário 3: Exibir mensagem de erro para dados inválidos
+- **Dado** que o usuário inseriu informações inválidas (como data de nascimento incoerente),
+- **Quando** clicar em "Salvar",
+- **Então** o sistema deve exibir uma mensagem de erro indicando os campos inválidos que precisam ser corrigidos.
+  
+#### Cenário 4: Cancelar alterações
+- **Dado** que o usuário está editando seu perfil,
+- **Quando** clicar em "Cancelar",
+- **Então** o sistema deve descartar todas as alterações e retornar às informações originais do perfil sem salvá-las.
+
+### Prioridade:
+Média
+
+### Estimativa de Esforço:
+??
+
+## Dependências:
+- Criação de perfil de usuário (História HU-004).
+- Banco de dados de usuários armazenando as informações de perfil.
 - Desenvolvimento da interface inicial da plataforma.
  
 ### **Notas/Comentários Adicionais:**
-
-
