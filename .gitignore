@@ -2,3 +2,5 @@
 /.idea
 .env
 /backend/classes/__pycache__
+/backend/endpoints/__pycache__
+/backend/endpoints/__pycache__

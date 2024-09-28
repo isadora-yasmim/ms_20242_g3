@@ -13,3 +13,6 @@ def filmes(pagina):
 
 
 print(listafilmes(1))  #apenas para testar a saída
+
+if __name__ == '__main__':
+    app.run()
