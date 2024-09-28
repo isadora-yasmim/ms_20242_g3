@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from endpoints.ListaFilmes import listafilmes
+from endpoints.DetalhesFilmes import detalhesfilme
 
 app = Flask(__name__)
 
@@ -11,8 +12,10 @@ def filmes(pagina):
     # os filmes estão ordenados por popularidade
     return jsonify(listafilmes(pagina))
 
+@app.get("/detalhes/<int:id>")
+def detalhes(id):
+    return jsonify(detalhesfilme(id))
 
-print(listafilmes(1))  #apenas para testar a saída
 
 if __name__ == '__main__':
     app.run()
