@@ -1,7 +1,7 @@
 import requests
 import os
 from dotenv import load_dotenv
-from backend.classes.filme import Filme
+from classes.filme import Filme
 
 load_dotenv()
 api_key = os.getenv('API_KEY')
