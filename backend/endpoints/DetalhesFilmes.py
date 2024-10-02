@@ -1,7 +1,7 @@
 import requests
 import os
 from dotenv import load_dotenv
-from backend.classes.detalhes import Detalhes
+from classes.detalhes import Detalhes
 
 load_dotenv()
 api_key = os.getenv('API_KEY')
