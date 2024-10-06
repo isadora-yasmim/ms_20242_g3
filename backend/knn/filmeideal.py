@@ -22,15 +22,26 @@ class FilmeIdeal:
             37: 0
         }
         self.cast = {}
+
+    def filmemodelo(self, filmes):
         for filme in filmes:
             for item in filme['genero']:
-                self.genero[item[id]] += 1
+                self.genero[item['id']] += 1
             for ator in filme['cast']:
-                if ator[id] not in self.cast:
-                    self.cast[ator[id]] = 1
+                if ator['id'] not in self.cast:
+                    self.cast[ator['id']] = 1
                 else:
-                    self.cast[ator[id]] += 1
-                
+                    self.cast[ator['id']] += 1
 
-                
+    def filmesimilar(self, modelo, filme):
+        for chave, valor in modelo.genero.items():
+            if valor > 0:
+                self.genero[chave] = self.genero.get(chave, 0) + 1
+        for ator in filme['cast']:
+            if ator['id'] in modelo.cast:
+                self.cast[ator['id']] = 1
+            else:
+                self.cast[ator['id']] = 0
 
+    def __str__(self):
+        return f"\n\n\nFilme, generos: {self.genero},\n casts: {self.cast}\n"
