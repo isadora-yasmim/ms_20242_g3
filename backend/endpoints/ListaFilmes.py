@@ -6,6 +6,7 @@ from classes.filme import Filme
 load_dotenv()
 api_key = os.getenv('API_KEY')
 
+
 #faz um Get no tmdb e recebe uma lista de filmes populares com base na página fornecida
 def listafilmes(pagina):
     url = f"https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page={pagina}&sort_by=popularity.desc"
@@ -24,7 +25,6 @@ def listafilmes(pagina):
 
     # para cada filme em results (chave do dicionário em response)
     for filme in response['results']:
-
         # cria um objeto da classe Filme com os atributos que vão ser utilizados
         obj = Filme(
             filme['id'],
@@ -38,7 +38,3 @@ def listafilmes(pagina):
         filmes.append(obj.to_dict())
     #retorna o objeto
     return filmes
-
-
-
-
