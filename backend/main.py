@@ -1,5 +1,4 @@
 import random
-
 from flask import Flask, jsonify, request
 from endpoints.ListaFilmes import listafilmes
 from endpoints.DetalhesFilmes import detalhesfilme
