@@ -1,0 +1,54 @@
+@startuml Diagrama_de_Classses_KlimaX
+        class Filme {
+                +Integer filmeid
+                +String titulo
+                ?? poster
+                +String genero
+                +Float mediavotos
+                +Integer numvotos
+
+                +__init__()
+                +to_dict()
+        }
+
+        class Detalhes extends Filme {
+                +String cast
+                +String streaming
+                +String sinopse
+
+                +__init__()
+                +to_dict()
+        }
+
+        class Cast{
+                +List ator
+                +cast.append()
+        }
+
+        class Ator {
+                +String nome
+                +Integer id 
+                ?? imagem
+        }
+
+        class Usuario {
+                +String nome
+                +String nome_de_usuario
+                +Integer idade 
+                +String email
+                +List favoritos
+                +List assistidos
+        }
+
+        class Detalhes_do_Usuario extends Usuario {
+                +List generos_favoritos
+                ...
+                
+        }
+
+        Detalhes --> Filme
+        Cast --> Detalhes
+        Ator --> Cast
+        Detalhes_do_Usuario --> Usuario
+
+@enduml
