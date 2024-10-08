@@ -11,7 +11,7 @@
                 +to_dict()
         }
 
-        class Detalhes extends Filme {
+        class Detalhes extends Filme{
                 +Dict cast
                 +Dict streaming
                 +String sinopse
@@ -20,7 +20,7 @@
                 +to_dict()
         }
 
-        class Cast{
+        class Cast extends Ator{
                 +List ator
                 +cast.append()
         }
@@ -57,8 +57,7 @@
 
         FilmeIdeal -- Detalhes
         Detalhes --> Filme
-        Cast --> Detalhes
-        Ator --> Cast
+        Cast <|-- Detalhes
         Detalhes_do_Usuario --> Usuario
 
 @enduml
