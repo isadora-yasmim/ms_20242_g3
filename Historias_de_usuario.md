@@ -1,4 +1,4 @@
-# **Histórias de Usuário**
+# **Histórias de Usuário 1**
 
 ### **ID:**
 HU-001
@@ -40,9 +40,10 @@ Alta
 
 ### **Notas/Comentários Adicionais:**
 
+___
+___
 
-<hr style="width: 80%; height: 2px; background-color: black; border: none;">
-
+# **Histórias de Usuário 2**
 
 ### **ID:** 
 HU-002
@@ -65,7 +66,7 @@ Como **usuário não cadastrado**, eu quero **ir até a aba de recomendações a
 - **Quando** o usuário clica no botão "me surpreenda"(nome passível de alterações),
 - **Então** um filme é indicado
 - **E** o usuário clica no botão "já assisti esse filme"(nome passível de alterações),
-- **Então** um filme é indicado.
+- **Então** um outro filme é indicado.
  
 #### Cenário 3: Falha na recomendação
 - **Dado** que o usuário está na página de recomendação aleatória,
@@ -89,7 +90,10 @@ Alta
 - Quando um filme é recomendado sua ficha técnica e uma imagem que o represente(possivelmente a capa) devem aparecer na tela
 - No caso de o usuário ser cadastrado, ao clicar em "já assisti esse filme"(nome passível de alterações) o filme assistido será adicionado ao seu perfil para que não seja recomendado novamente.
 
-<hr style="width: 80%; height: 2px; background-color: black; border: none;">
+___
+___
+
+# **Histórias de Usuário 3**
 
 ### **ID:** 
 HU-003
@@ -119,7 +123,7 @@ Como **usuário não cadastrado**, eu quero **ir até a aba de recomendações c
 - **Dado** que o usuário está na página de recomendação com base em um ou mais filmes escolhidos,
 - **Quando** o usuário seleciona um ou mais filmes que o interessam,
 - **E** o usuário clica no botão "me recomende um filme"(nome passível de alterações),
-- **E**ocorre uma falha na indicação do filme ,
+- **E** ocorre uma falha na indicação do filme ,
 - **E** a mensagem "erro na recomendação" aparece na tela,
 - **E** o usuário seleciona novamente os filmes que o interessam,
 - **Então** o filme que mais se aproxima do(s) selecionado(s) é indicado.
@@ -139,7 +143,113 @@ Alta
 ??
  
 ### **Dependências:** 
+- Integração com uma API que contenha a base dados dos filmes.
+- Desenvolvimento da interface inicial da plataforma.
 
+### **Notas/Comentários Adicionais:**
+___
+___
+
+# **Histórias de Usuário 4**
+
+### **ID:** 
+HU-004
+ 
+### **Título:** 
+Criar Perfil de Usuário
+ 
+### **Descrição:** 
+Como **usuário sem cadastro**, eu quero **criar um perfil individual na plataforma** para que **possa registrar minhas informações e ter acesso a histórico de buscas**.
+ 
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Conta Criada com Sucesso
+- **Dado** que o usuário acessa a aba de "Criar Conta"
+- **Quando** ele preenche todos os campos corretamente
+- **E** clica em "Finalizar Cadastro"
+- **Então** os seus dados são armazenados
+- **E** o sistema exibirá uma mensagem dizendo "Conta Criada com Sucesso!"
+- **E** ele é direcionado a página inicial já logado. 
+ 
+#### Cenário 2: Campo com e-mail inválido
+- **Dado** que o usuário acessa a aba de "Criar Conta"
+- **Quando** ele digita um e-mail que não possua o formato "nome_de_Usuário@nome_de_Domínio"
+- **E** clica em "Finalizar Cadastro"
+- **Então** uma mensagem de erro deve ser exibida, informando que o e-mail possui formato inválido
+- **E** o sistema deve destacar o campo de e-mail
+- **E** permitir editá-lo.
+ 
+#### Cenário 3: Senha e confirmação de senha em dissonância
+- **Dado** que o usuário acessa a aba de "Criar Conta"
+- **Quando** ele preenche os campos "Senha" e "Confirmar de Senha"
+- **E** um campo tem conteúdo diferente do outro(estão em dissonância)
+- **Então** uma mensagem de erro deve ser exibida informando que "As senhas estão diferentes"
+- **E** o sistema deve destacar os campos "Senha" e "Confirmar de Senha"
+- **E** permitir editá-las.
+
+### **Prioridade:** 
+Média
+ 
+### **Estimativa de Esforço:** 
+--
+ 
+### **Dependências:** 
+- Salvar e verificar Meus Favoritos(HU-005)
+ 
+### **Notas/Comentários Adicionais:**
+- Os únicos campos necessários para o cadastro será e-mail e senha - para criação de conta facilitada.
+___
+___
+
+# **Histórias de Usuário 5**
+
+### **ID:** 
+
+HU-005
+
+### **Título:** 
+Salvar e verificar Meus Favoritos
+ 
+### **Descrição:** 
+Como **usuário cadastrado**, eu quero **poder favoritar os filmes** para que **possa consultar uma lista com meus filmes favoritos ou que mais me chamaram atenção**.
+ 
+### **Critérios de Aceitação:**
+
+#### Cenário 1: Favoritar filme recomendado
+- **Dado** que o usuário utilizou alguma das funções de recomendação de filme
+- **Quando** o filme aparece para ele
+- **Então** ele poderá apertar um botão no formato de coração ou estrela e favoritar.
+ 
+#### Cenário 2: favoritar filme do catálogo
+- **Dado** que o usuário está na página de catálogo
+- **Quando** ele clica em um filme para ver mais informações
+- **Então** deve ter, junto das informações, um botão no formato de coração ou estrela
+- **E** ele poderá apertá-lo, favoritando o filme.
+ 
+#### Cenário 3: Acesso a lista de filmes favoritos
+- **Dado** que o usuário está tela de "Perfil",
+- **OU** abre a barra lateral,
+- **Quando** ele clica no botão "Meus favoritos" - que direciona para a página de filmes favoritos,
+- **Então** Uma lista com todos os filmes favoritados pelo usuário deve aparecer
+- **E** o usuário deve ter a opção remover os filmes que não tiver mais interresse
+ 
+### **Prioridade:** 
+baixa
+ 
+### **Estimativa de Esforço:** 
+--
+ 
+### **Dependências:** 
+- Criar Perfil de Usuário(HU-004)
+- Recomendação de um filme de maneira aleatória(HU-002)
+- Recomendação de filmes que mais se aproximam dos filmes selecionados pelo usuário(HU-003)
+- Recomendar filmes com base nos critérios do usuário(HU-001)
+ 
+### **Notas/Comentários Adicionais:**
+___
+___
+
+# **Histórias de Usuário 6**
 ### **ID:**  
 HU-006
 
@@ -182,11 +292,14 @@ Média
 - Desenvolvimento da interface inicial da plataforma.
 
 ### **Notas/Comentários Adicionais:**  
-- Diferentes filmes serão apresentados no catálogo de filmes, sendo representados por uma imagem do filme, priorizando aquelas que apresentam o nome do filme na imagem.  
+- Diferentes filmes serão apresentados no catálogo de filmes, sendo representados por uma imagem do filme, priorizando aquelas que apresentam o nome do filme na imagem(possivelmente a capa).  
 - Caso o usuário já seja cadastrado, haverá uma pequena alteração na iluminação da imagem do filme para indicar que o usuário já assistiu a determinada obra.  
 - Catálogos de filmes premiados e indicações da administração também estarão na plataforma.
 
-<hr style="width: 80%; height: 2px; background-color: black; border: none;">
+___
+___
+
+# **Histórias de Usuário 7**
 
 ### **ID:**
 HU-007
@@ -220,18 +333,62 @@ Como **usuário cadastrado**, eu quero **editar as informações do meu perfil**
 - **Quando** clicar em "Cancelar",
 - **Então** o sistema deve descartar todas as alterações e retornar às informações originais do perfil sem salvá-las.
 
-### Prioridade:
+### **Prioridade**:
 Média
 
-### Estimativa de Esforço:
+### **Estimativa de Esforço:**  
 ??
 
-## Dependências:
+### **Dependências:** 
 - Criação de perfil de usuário (História HU-004).
 - Banco de dados de usuários armazenando as informações de perfil.
 - Desenvolvimento da interface inicial da plataforma.
  
 ### **Notas/Comentários Adicionais:**
+
+___
+___
+
+# **Histórias de Usuário 8**
+
+### **ID:**
+HU-008
+
+### **Título:**
+Exibir informações importantes de filmes selecionados
+
+### **Descrição:**
+Como **usuário**, quero **ver informações relevantes sobre um filme selecionado**, para que **eu possa ter mais detalhes sobre o filme e onde assisti-lo**
+
+### **Critérios de Aceitação:**
+
+#### Cenário 1: 
+- **Dado** me foi recomendado um filme,
+- **Quando** clico no botão 'mais informações'",
+- **Então** o site me mostra informações detalhadas como, sinopse, ano de lançamento, elenco e serviços de streaming onde o filme se encontra.
+  
+#### Cenário 2: 
+- **Dado** estou no catálogo de filmes,
+- **Quando** clico na imagem do filme",
+- **Então** o site me mostra informações detalhadas como, sinopse, ano de lançamento, elenco e serviços de streaming onde o filme se encontra.
+
+### **Prioridade**:
+Média
+
+### **Estimativa de Esforço:**  
+??
+
+### **Dependências:** 
+- Desenvolvimento da interface inicial da plataforma.
+- Catálogo de Filmes disponível
+- Sistema de recomendações
+ 
+### **Notas/Comentários Adicionais:**
+
+___
+___
+
+# **Histórias de Usuário 9**
 
 ### **ID:**  
 HU-009
