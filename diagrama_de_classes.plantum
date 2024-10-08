@@ -20,7 +20,7 @@
         }
 
         class Cast{
-                +List ator
+                +List<Ator> atores
                 +__init__()
         }
 
@@ -38,6 +38,7 @@
                 +String email
                 +List favoritos
                 +List assistidos
+                +avaliarFilme(Filme filme, Integer nota)
                 +__init__()
         }
         class FilmeIdeal {
