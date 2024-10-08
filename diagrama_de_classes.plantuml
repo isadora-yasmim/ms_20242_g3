@@ -32,12 +32,9 @@
         }
 
         class Usuario {
-                +String nome
                 +String nome_de_usuario
-                +Integer idade
                 +String email
-                +List favoritos
-                +List assistidos
+                +String senha
                 +__init__()
         }
         class FilmeIdeal {
@@ -52,7 +49,10 @@
 
         class Detalhes_do_Usuario extends Usuario {
                 +List generos_favoritos
-                ...
+                +String nome
+                +Integer idade
+                +List favoritos
+                +List assistidos
 
         }
 
