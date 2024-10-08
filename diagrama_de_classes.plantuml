@@ -3,7 +3,7 @@
                 +Integer filmeid
                 +String titulo
                 ?? poster
-                +String genero
+                +Dict genero
                 +Float mediavotos
                 +Integer numvotos
 
@@ -12,8 +12,8 @@
         }
 
         class Detalhes extends Filme {
-                +String cast
-                +String streaming
+                +Dict cast
+                +Dict streaming
                 +String sinopse
 
                 +__init__()
@@ -27,25 +27,35 @@
 
         class Ator {
                 +String nome
-                +Integer id 
+                +Integer id
                 ?? imagem
         }
 
         class Usuario {
                 +String nome
                 +String nome_de_usuario
-                +Integer idade 
+                +Integer idade
                 +String email
                 +List favoritos
                 +List assistidos
+        }
+        class FilmeIdeal {
+                +Dict genero
+                +Dict cast
+                +Integer id
+
+                +__init__()
+                +filmemodelo()
+                +filmesimilar()
         }
 
         class Detalhes_do_Usuario extends Usuario {
                 +List generos_favoritos
                 ...
-                
+
         }
 
+        FilmeIdeal -- Detalhes
         Detalhes --> Filme
         Cast --> Detalhes
         Ator --> Cast
