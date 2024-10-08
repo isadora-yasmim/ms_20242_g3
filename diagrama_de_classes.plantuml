@@ -11,24 +11,24 @@
                 +to_dict()
         }
 
-        class Detalhes extends Filme {
+        class Detalhes{
                 +Dict cast
                 +Dict streaming
                 +String sinopse
 
-                +__init__()
-                +to_dict()
+
         }
 
         class Cast{
                 +List ator
-                +cast.append()
+                +__init__()
         }
 
         class Ator {
                 +String nome
                 +Integer id
                 ?? imagem
+                +__init__()
         }
 
         class Usuario {
@@ -38,6 +38,7 @@
                 +String email
                 +List favoritos
                 +List assistidos
+                +__init__()
         }
         class FilmeIdeal {
                 +Dict genero
@@ -55,10 +56,9 @@
 
         }
 
-        FilmeIdeal -- Detalhes
-        Detalhes --> Filme
-        Cast --> Detalhes
-        Ator --> Cast
-        Detalhes_do_Usuario --> Usuario
+        FilmeIdeal -> Detalhes
+        Detalhes -|> Filme
+        Cast <-- Detalhes
+        Ator <- Cast
 
 @enduml
