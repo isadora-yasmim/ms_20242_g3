@@ -2,7 +2,7 @@
         class Filme {
                 +Integer filmeid
                 +String titulo
-                ?? poster
+                +String poster
                 +Dict genero
                 +Float mediavotos
                 +Integer numvotos
@@ -27,7 +27,7 @@
         class Ator {
                 +String nome
                 +Integer id
-                ?? imagem
+                +String imagem
                 +__init__()
         }
 
