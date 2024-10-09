@@ -22,9 +22,6 @@
         class Cast{
 
                 +List<Ator> atores
-
-                +List ator
-
                 +__init__()
         }
 
