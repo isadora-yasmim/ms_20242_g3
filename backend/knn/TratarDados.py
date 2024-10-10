@@ -23,16 +23,17 @@ def recomendarfilmes(filmespreferidos):
     with concurrent.futures.ThreadPoolExecutor(max_workers=maxExecucoes) as executor:
         future_to_filme = {}
         for filme in filmespreferidos:
-            url = f"https://api.themoviedb.org/3/movie/{filme['id']}/similar?language=pt-BR&page=1"
-            headers = {
-                "accept": "application/json",
-                "Authorization": f"Bearer {api_key}"
-            }
-            response = requests.get(url, headers=headers).json()
+            for i in range(5):
+                url = f"https://api.themoviedb.org/3/movie/{filme['id']}/recommendations?language=pt-BR&page={i+1}"
+                headers = {
+                    "accept": "application/json",
+                    "Authorization": f"Bearer {api_key}"
+                }
+                response = requests.get(url, headers=headers).json()
 
-            for dado in response['results']:
-                future = executor.submit(detalhesfilme, dado['id'])
-                future_to_filme[future] = dado['id']
+                for dado in response['results']:
+                    future = executor.submit(detalhesfilme, dado['id'])
+                    future_to_filme[future] = dado['id']
 
         for future in concurrent.futures.as_completed(future_to_filme):
             try:
@@ -58,7 +59,6 @@ def recomendarfilmes(filmespreferidos):
 
     tempo_execucao = fim - inicio  # Calcula a diferença
     print(f"A função levou {tempo_execucao} segundos para executar.")
-    #return '\n'.join(str(filme) for filme in filmesComparar)  #apenas para testar a saída, isso nao vao estar no codigo
     modelo = []
     similares = []
     ids = {}
@@ -95,7 +95,7 @@ def recomendarfilmes(filmespreferidos):
             print(i)
             idsEscolhidos.append(ids[int(i)])  # Converte 'i' para inteiro normal
 
-    return idsEscolhidos
+    return list(set(idsEscolhidos))
 
 
 def processar_filme_similar(filme, filmeideal):

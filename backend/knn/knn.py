@@ -26,9 +26,9 @@ def kvizinhos(modelo, similares):
     Similares = np.array(similares_padronizado)
 
     # Treinar o modelo de vizinhos mais próximos
-    nbrs = NearestNeighbors(n_neighbors=5, algorithm='ball_tree').fit(Similares)
+    nbrs = NearestNeighbors(n_neighbors=20, algorithm='ball_tree').fit(Similares)
     distances, indices = nbrs.kneighbors(Modelo)
-
+    print(Similares)
     print(distances)
     print(indices)
 
