@@ -5,6 +5,7 @@ import requests
 import os
 from dotenv import load_dotenv
 from endpoints.DetalhesFilmes import detalhesfilme
+from .knn import kvizinhos
 import concurrent.futures
 
 load_dotenv()
@@ -57,7 +58,47 @@ def recomendarfilmes(filmespreferidos):
 
     tempo_execucao = fim - inicio  # Calcula a diferença
     print(f"A função levou {tempo_execucao} segundos para executar.")
-    return '\n'.join(str(filme) for filme in filmesComparar)  #apenas para testar a saída, isso nao vao estar no codigo
+    #return '\n'.join(str(filme) for filme in filmesComparar)  #apenas para testar a saída, isso nao vao estar no codigo
+    modelo = []
+    similares = []
+    ids = {}
+    for filme in filmesComparar:
+        atributos = []
+        cast = []
+        generos = []
+        for chave, valor in filme.cast.items():
+            cast.append(valor)
+        for chave, valor in filme.genero.items():
+            generos.append(valor)
+        atributos.append(cast)
+        atributos.append(generos)
+        similares.append(atributos)
+        ids[filme.id] = len(atributos) - 1
+
+    for i in range(1):
+        atributosModelo = []
+        cast = []
+        generos = []
+        for chave, valor in filmeideal.cast.items():
+            cast.append(valor)
+        for chave, valor in filmeideal.genero.items():
+            generos.append(valor)
+        atributosModelo.append(cast)
+        atributosModelo.append(generos)
+        modelo.append(atributosModelo)
+
+    indices = kvizinhos(modelo, similares)
+    idsEscolhidos = []
+    for indice in indices:
+        idsEscolhidos.append(ids[indice])
+
+    return idsEscolhidos
+
+
+
+
+
+
 
 
 def processar_filme_similar(filme, filmeideal):
