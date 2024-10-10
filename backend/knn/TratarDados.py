@@ -73,8 +73,9 @@ def recomendarfilmes(filmespreferidos):
         atributos.append(cast)
         atributos.append(generos)
         similares.append(atributos)
-        ids[filme.id] = len(atributos) - 1
-
+        ids[len(similares) - 1] = filme.id
+    print(ids)
+    print(len(filmesComparar))
     for i in range(1):
         atributosModelo = []
         cast = []
@@ -90,15 +91,11 @@ def recomendarfilmes(filmespreferidos):
     indices = kvizinhos(modelo, similares)
     idsEscolhidos = []
     for indice in indices:
-        idsEscolhidos.append(ids[indice])
+        for i in indice:
+            print(i)
+            idsEscolhidos.append(ids[int(i)])  # Converte 'i' para inteiro normal
 
     return idsEscolhidos
-
-
-
-
-
-
 
 
 def processar_filme_similar(filme, filmeideal):
