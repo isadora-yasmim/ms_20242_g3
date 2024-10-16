@@ -20,7 +20,8 @@
         }
 
         class Cast{
-                +List ator
+
+                +List<Ator> atores
                 +__init__()
         }
 
@@ -32,12 +33,19 @@
         }
 
         class Usuario {
+
                 +String nome
                 +String nome_de_usuario
                 +Integer idade
                 +String email
                 +List favoritos
                 +List assistidos
+                +avaliarFilme(Filme filme, Integer nota)
+
+                +String nome_de_usuario
+                +String email
+                +String senha
+
                 +__init__()
         }
         class FilmeIdeal {
@@ -52,7 +60,14 @@
 
         class Detalhes_do_Usuario extends Usuario {
                 +List generos_favoritos
+
                 ...
+
+                +String nome
+                +Integer idade
+                +List favoritos
+                +List assistidos
+
 
         }
 

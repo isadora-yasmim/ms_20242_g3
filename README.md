@@ -77,7 +77,7 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 |2|Função de busca personalizada(HU-009) e função de busca por texto(HU-006)|8/10/2024|22/10/2024|Grupo|Programada|
 |3|Função de recomendação por tags(HU-001)|8/10/2024|22/10/2024|Grupo|Programada|
 |4|Função de recomendação aleatória(HU-002) |22/10/2024|05/11/2024|Grupo|Programada|
-|5|Função de recomendação com base em um filme selecionado(HU-003)|22/10/2024|05/11/2024|Grupo|Programada|
+|5|Função de recomendação com base em um filme selecionado(HU-003)|22/10/2024|05/11/2024|Matheus|Concluída✅|
 |6|Função de cadastro(HU-004) e login(HU-)|05/11/2024|22/11/2024|Grupo|Programada|
 
 ### Iterações x Atividades
