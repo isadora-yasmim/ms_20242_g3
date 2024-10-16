@@ -74,11 +74,11 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
 |1|Função para buscar filmes e exibir informações importantes(HU-008)|24/09/2024|29/9/2024|Matheus|Concluída✅|
-|2|Função de busca personalizada(HU-009) e função de busca por texto(HU-006)|8/10/2024|22/10/2024|Grupo|Programada|
-|3|Função de recomendação por tags(HU-001)|8/10/2024|22/10/2024|Grupo|Programada|
-|4|Função de recomendação aleatória(HU-002) |22/10/2024|05/11/2024|Grupo|Programada|
-|5|Função de recomendação com base em um filme selecionado(HU-003)|22/10/2024|05/11/2024|Matheus|Concluída✅|
-|6|Função de cadastro(HU-004) e login(HU-)|05/11/2024|22/11/2024|Grupo|Programada|
+|2|Função de recomendação com base em um filme selecionado(HU-003)|8/10/2024|22/10/2024|Matheus|Concluída✅|
+|3|Função de busca personalizada(HU-009) e função de busca por texto(HU-006)|8/10/2024|22/10/2024|Grupo|Programada|
+|4|Função de recomendação por tags(HU-001)|8/10/2024|22/10/2024|Grupo|Programada|
+|5|Função de recomendação aleatória(HU-002) |22/10/2024|05/11/2024|Grupo|Programada|
+|6|Função de cadastro(HU-004) e login|05/11/2024|22/11/2024|Grupo|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
@@ -91,8 +91,9 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 |4|Função para buscar filmes e exibir informações importantes(HU-008)|24/09/2024|29/09/2024|Matheus|Concluída✅|
 |4|Diagrama de classes|29/09/2024|08/10/2024|Grupo|Concluída✅|
 |5|Função de recomendação com base em um filme selecionado(HU-003)|8/10/2024|22/10/2024|Grupo|Concluída✅|
-|5|Função de busca personalizada(HU-009) e função de busca por texto(HU-006)|8/10/2024|22/10/2024|Grupo|Programada|
-|5|Função de recomendação aleatória(HU-002) |8/10/2024|22/10/2024|Grupo|Programada|
+|5|Protótipo Figma|8/10/2024|22/10/2024|Grupo|Em andamento|
+|6|Função de busca personalizada(HU-009) e função de busca por texto(HU-006)|22/10/2024|5/11/2024|Grupo|Programada|
+|6|Função de recomendação aleatória(HU-002) |22/10/2024|5/11/2024|Grupo|Programada|
 |6|Função de cadastro(HU-004) e login(HU-)|22/10/2024|05/11/2024|Grupo|Programada|
 |7|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
