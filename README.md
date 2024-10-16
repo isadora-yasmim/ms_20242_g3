@@ -89,10 +89,10 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 |3|Especificação das histórias de usuário|13/09/2024|24/09/2024|Grupo|Concluída✅|
 |4|Distribuição dos itens do backlog entre as iterações|24/09/2024|1/10/2024|Grupo|Concluída✅|
 |4|Função para buscar filmes e exibir informações importantes(HU-008)|24/09/2024|29/09/2024|Matheus|Concluída✅|
-|4|Diagrama de classes|29/09/2024|08/10/2024|Grupo|Em andamento|
+|4|Diagrama de classes|29/09/2024|08/10/2024|Grupo|Concluída✅|
+|5|Função de recomendação com base em um filme selecionado(HU-003)|8/10/2024|22/10/2024|Grupo|Concluída✅|
 |5|Função de busca personalizada(HU-009) e função de busca por texto(HU-006)|8/10/2024|22/10/2024|Grupo|Programada|
 |5|Função de recomendação aleatória(HU-002) |8/10/2024|22/10/2024|Grupo|Programada|
-|6|Função de recomendação com base em um filme selecionado(HU-003)|22/10/2024|05/11/2024|Grupo|Programada|
 |6|Função de cadastro(HU-004) e login(HU-)|22/10/2024|05/11/2024|Grupo|Programada|
 |7|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
 
