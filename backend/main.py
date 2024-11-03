@@ -2,6 +2,7 @@ import random
 from flask import Flask, jsonify, request
 from endpoints.ListaFilmes import listafilmes
 from endpoints.DetalhesFilmes import detalhesfilme
+from endpoints.Filtrada import filtrada
 from knn.TratarDados import recomendarfilmes
 
 app = Flask(__name__)
@@ -20,12 +21,19 @@ def detalhes(id):
     return jsonify(detalhesfilme(id))
 
 
-"""
+
 @app.get("/aleatorio")
 def aleatorio():
-    id = random.randint(2, 824845)
-    return jsonify(detalhesfilme(id))
-"""
+    while True:
+        try:
+            id = random.randint(2, 824845)
+            dados = detalhesfilme(id)
+            if dados['poster'] is not None: #and (dados['sinopse'] != ""):
+                return jsonify(dados)
+        except Exception as e:
+            print(f"Erro ao buscar dados para o ID {id}: {e}")
+            continue
+
 
 
 #IMPORTANTE: O FRONTEND DEVE REGISTRAR O DETALHES<ID> DOS FILMES PREFERIDOS NO MOMENTO QUE SÃO SELECIONADOS
@@ -35,6 +43,16 @@ def aleatorio():
 @app.post("/recomendacao")
 def recomendacao():
     return recomendarfilmes(request.json)
+
+@app.post("/recomendacaofiltrada")
+def recomendacaofiltrada():
+    while True:
+        try:
+            id = filtrada(request.json)
+        except Exception as e:
+            print(f"Erro: {e}")
+            continue
+        return jsonify(detalhesfilme(id))
 
 
 if __name__ == '__main__':
