@@ -100,5 +100,5 @@ Este projeto será desenvolvido pelos componentes do grupo 3:
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
 
 
-
+[link do protótipo do figma](https://www.figma.com/design/3Qo6mxtzsPfRBPOg2jlSzF/Espa%C3%A7o-Principal?node-id=0-1&node-type=canvas&t=3JhN0hCpXy2E4Ih3-0)
 
