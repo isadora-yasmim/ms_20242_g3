@@ -58,13 +58,10 @@ def recomendacao():
 
 @app.post("/recomendacaofiltrada")
 def recomendacaofiltrada():
-    while True:
-        try:
-            id = filtrada(request.json)
-        except Exception as e:
-            print(f"Erro: {e}")
-            continue
-        return jsonify(detalhesfilme(id))
+    params = request.get_json(force=True)
+    print(request.data, file=sys.stderr)
+    idfilme = filtrada(params)
+    return jsonify(detalhesfilme(idfilme))
 
 
 if __name__ == '__main__':
