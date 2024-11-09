@@ -1,4 +1,4 @@
-# Mostra os detalhes de um filme específico
+# Mostra os detalhes de um filme aleatório
 
 
 
