@@ -1,6 +1,6 @@
 # Retorna os detalhes de um filme aleatório com base nos filtros
 
-**URL** : `https://randomgosling.onrender.com/search/{página}`
+**URL** : `https://randomgosling.onrender.com/recomendacaofiltrada`
 
 **Method** : `POST`
 
