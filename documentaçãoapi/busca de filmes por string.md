@@ -1,6 +1,6 @@
 # Mostra uma lista com até 20 filmes
 
-Podem ser chamadas várias páginas com filmes diferentes, cada uma contento 20 filmes (se tiver filmes o suficiente para aquela string), sendo esses filmes que contenham as palavras presentes na string de busca
+Podem ser chamadas várias páginas com filmes diferentes, cada uma contendo 20 filmes (se tiver filmes o suficiente para aquela string), sendo esses filmes que contenham as palavras presentes na string de busca
 
 **URL** : `https://randomgosling.onrender.com/search/{página}`
 
