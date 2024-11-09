@@ -9,7 +9,7 @@ api_key = os.getenv('API_KEY')
 
 
 def busca(params, page):
-    url = f"https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page={page}"
+    url = f"https://api.themoviedb.org/3/search/movie?include_adult=true&language=pt-BR&page={page}"
     headers = {
         "accept": "application/json",
         "Authorization": f"Bearer {api_key}"
