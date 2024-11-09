@@ -9,7 +9,7 @@ api_key = os.getenv('API_KEY')
 
 #faz um Get no tmdb e recebe uma lista de filmes populares com base na página fornecida
 def listafilmes(pagina):
-    url = f"https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page={pagina}&sort_by=popularity.desc"
+    url = f"https://api.themoviedb.org/3/discover/movie?include_adult=true&include_video=false&language=pt-BR&page={pagina}&sort_by=popularity.desc"
     headers = {
         "accept": "application/json",
 
