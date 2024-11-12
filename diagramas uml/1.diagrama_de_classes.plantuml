@@ -37,7 +37,7 @@
                 +String nome
                 +String nome_de_usuario
                 +Integer idade
-                +String email
+                +String emai
                 +List favoritos
                 +List assistidos
                 +avaliarFilme(Filme filme, Integer nota)
