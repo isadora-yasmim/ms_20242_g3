@@ -34,7 +34,7 @@ def detalhesfilme(id):
     for pessoa in response1['credits']['cast']:
         ator = {'nome': pessoa['name'], 'id': pessoa['id'], 'imagem': pessoa['profile_path']}
         cast.append(ator)
-        if len(cast) >= 10:
+        if len(cast) >= 20:
             break
 
     streaming_info = response2.get('results', {}).get('BR', {})

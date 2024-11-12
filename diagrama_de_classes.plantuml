@@ -19,8 +19,9 @@
 
         }
 
-        class Cast{
-                +List ator
+        class Elenco{
+
+                +List<Ator> atores
                 +__init__()
         }
 
@@ -32,14 +33,24 @@
         }
 
         class Usuario {
+
+                +String nome
                 +String nome_de_usuario
+                +Integer idade
+                +String email
+                +List favoritos
+                +List assistidos
+                +avaliarFilme(Filme filme, Integer nota)
+
+                +String nomeUsuario
                 +String email
                 +String senha
+
                 +__init__()
         }
         class FilmeIdeal {
                 +Dict genero
-                +Dict cast
+                +Dict elenco
                 +Integer id
 
                 +__init__()
@@ -47,18 +58,22 @@
                 +filmesimilar()
         }
 
-        class Detalhes_do_Usuario extends Usuario {
-                +List generos_favoritos
+        class DetalhesUsuario extends Usuario {
+                +List generosFavoritos
+
+                ...
+
                 +String nome
                 +Integer idade
                 +List favoritos
                 +List assistidos
 
+
         }
 
         FilmeIdeal -> Detalhes
         Detalhes -|> Filme
-        Cast <-- Detalhes
+        Elenco <-- Detalhes
         Ator <- Cast
 
 @enduml

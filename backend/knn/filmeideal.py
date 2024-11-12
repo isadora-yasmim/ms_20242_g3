@@ -35,12 +35,6 @@ class FilmeIdeal:
                     self.cast[ator['id']] += 1
 
     def filmesimilar(self, modelo, filme):
-        """
-        for chave, valor in modelo.genero.items():
-            if valor > 0:
-                self.genero[chave] = self.genero.get(chave, 0) + 1
-        """
-
         for genero in filme['genero']:
             self.genero[genero['id']] = modelo.genero[genero['id']]
         self.cast = {ator_id: 0 for ator_id in modelo.cast}
