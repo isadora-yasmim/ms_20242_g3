@@ -1,0 +1,30 @@
+@startuml
+participant "Frontend" as Frontend
+participant "Backend" as Backend
+participant "API Externa" as API
+
+== Recomendação aleatória ==
+Frontend -> Backend: GET /aleatorio
+Backend -> Backend: Gera ID aleatório
+Backend -> API: GET /{id}
+API -> Backend: [detalhes] JSON
+Backend -> Backend: Filtrar dados
+Backend -> Frontend: [detalhes filtrados] JSON
+
+== Recomendação por similares ==
+Frontend -> Backend: POST /recomendarsimilares - {JSON}
+loop ["fIlmes no json"]
+    Backend -> API: GET /similares/{id}
+    API -> Backend: [similares] JSON
+end
+Backend -> Backend: Filtrar dados
+Backend -> Backend: Selecionar mais parecidos
+Backend -> Frontend: [IDs selecionados] JSON
+
+== Recomendação por filtros ==
+Frontend -> Backend: POST /buscaFiltrada - JSON
+Backend -> API: GET /discover - JSON
+API -> Backend: [filmes] JSON
+Backend -> Backend: Filtrar dados
+Backend -> Frontend: [filmes] JSON
+@enduml
