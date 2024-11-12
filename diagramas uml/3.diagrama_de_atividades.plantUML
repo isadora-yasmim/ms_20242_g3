@@ -1,4 +1,4 @@
-@startum
+@startuml
 start
 :Exibir opções de recomendação;
 
