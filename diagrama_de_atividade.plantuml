@@ -1,0 +1,24 @@
+@startuml
+
+start
+:Exibir opções de recomendação;
+if (Escolher recomendação por Filmes Similares?) then (Sim)
+    :Seleciona um ou mais filmes;
+    :Obter lista de filmes similares;
+    :Exibir lista de filmes similares;
+    :Voltar às opções de recomendação;
+else
+    if (Escolher recomendação por Filtros?) then (Sim)
+        :Seleciona filtros de preferência;
+        :Obter lista de filmes conforme filtros;
+        :Exibir lista de filmes filtrados;
+        :Voltar às opções de recomendação;
+    else
+        :Seleciona recomendação aleatória;
+        :Obter um filme aleatório;
+        :Exibir filme aleatório;
+        :Voltar às opções de recomendação;
+    endif
+endif
+stop
+@enduml
