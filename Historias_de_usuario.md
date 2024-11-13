@@ -154,7 +154,7 @@ ___
 
 ### **ID:** 
 HU-004
- 
+*Requisito futuro 
 ### **Título:** 
 Criar Perfil de Usuário
  
@@ -206,7 +206,7 @@ ___
 ### **ID:** 
 
 HU-005
-
+*Requisito futuro 
 ### **Título:** 
 Salvar e verificar Meus Favoritos
  
@@ -303,6 +303,7 @@ ___
 
 ### **ID:**
 HU-007
+*Requisito futuro 
 
 ### **Título:**
 Editar perfil do usuário
@@ -334,7 +335,7 @@ Como **usuário cadastrado**, eu quero **editar as informações do meu perfil**
 - **Então** o sistema deve descartar todas as alterações e retornar às informações originais do perfil sem salvá-las.
 
 ### **Prioridade**:
-Média
+Baixa
 
 ### **Estimativa de Esforço:**  
 ??
@@ -395,6 +396,7 @@ HU-009
 
 ### **Título:**  
 Filtro para o Catálogo de filmes
+*Requisito futuro 
 
 ### **Descrição:**  
 Como **usuário da plataforma**, eu quero **ter acesso a um filtro para o catálogo de filmes** para que **me sejam recomendados diferentes tipos de filmes através de diversos critérios**.
@@ -422,7 +424,7 @@ Como **usuário da plataforma**, eu quero **ter acesso a um filtro para o catál
 - **Então** um catálogo de filmes é indicado.
 
 ### **Prioridade:**  
-Média
+Baixa
 
 ### **Estimativa de Esforço:**  
 ??
