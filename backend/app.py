@@ -1,7 +1,11 @@
 import random
+import sys
+
 from flask import Flask, jsonify, request
 from endpoints.ListaFilmes import listafilmes
 from endpoints.DetalhesFilmes import detalhesfilme
+from endpoints.Filtrada import filtrada
+from endpoints.QueryBusca import busca
 from knn.TratarDados import recomendarfilmes
 
 app = Flask(__name__)
@@ -14,18 +18,33 @@ def filmes(pagina):
     # os filmes estão ordenados por popularidade
     return jsonify(listafilmes(pagina))
 
+@app.post("/search/<int:pagina>")
+def search(pagina):
+    params = request.get_json(force=True)
+    print(request.data, file=sys.stderr)
+    return jsonify(busca(params, pagina))
+
+
+
+
+
 
 @app.get("/detalhes/<int:id>")
 def detalhes(id):
     return jsonify(detalhesfilme(id))
 
 
-"""
 @app.get("/aleatorio")
 def aleatorio():
-    id = random.randint(2, 824845)
-    return jsonify(detalhesfilme(id))
-"""
+    while True:
+        try:
+            id = random.randint(2, 824845)
+            dados = detalhesfilme(id)
+            if dados['poster'] is not None:  #and (dados['sinopse'] != ""):
+                return jsonify(dados)
+        except Exception as e:
+            print(f"Erro ao buscar dados para o ID {id}: {e}")
+            continue
 
 
 #IMPORTANTE: O FRONTEND DEVE REGISTRAR O DETALHES<ID> DOS FILMES PREFERIDOS NO MOMENTO QUE SÃO SELECIONADOS
@@ -37,5 +56,15 @@ def recomendacao():
     return recomendarfilmes(request.json)
 
 
+@app.post("/recomendacaofiltrada")
+def recomendacaofiltrada():
+    params = request.get_json(force=True)
+    print(request.data, file=sys.stderr)
+    idfilme = filtrada(params)
+    return jsonify(detalhesfilme(idfilme))
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
+
+

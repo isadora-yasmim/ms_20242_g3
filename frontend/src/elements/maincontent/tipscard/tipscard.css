@@ -1,0 +1,28 @@
+.tipscard {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 4vw;
+  bottom: calc(3vh + 1vw);
+  background-color: #08272762;
+  height: calc(calc(calc(91vh - 3vw) / 3.5));
+  width: calc(100vw - 8vw);
+  border-radius: 1vh;
+}
+
+.tipscardButton {
+  display: flex;
+  background-color: #053434;
+  color: rgb(255, 255, 255, 0.8);
+  font-family: Helvetica;
+  font-size: 2vh;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  justify-content: center;
+  width: calc(100vw - 8vw);
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  border-color: #76abae;
+}
