@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.randomfilms {
+  display: grid;
+  justify-items: center;
+  position: fixed;
+  top: calc(6vh + 1vw);
+  right: 4vw;
+  background: linear-gradient(180deg, #012727 40%, #000);
+  height: calc(calc(calc(91vh - 3vw) / 3.5) * 2.5);
+  width: calc(calc(100vw - 12vw) / 3);
+  border-radius: 1vh;
+}
+
+.randomfilms:hover {
+  transform: scale(1.03);
+}
+
+.imagemdefundorandom {
+  position: fixed;
+  transform: scale(1);
+  width: calc(calc(100vw - 12vw) / 3);
+  height: calc(calc(calc(91vh - 3vw) / 3.5) * 2.5);
+  background-image: url("https://i.ibb.co/LQkx8Q4/imagem-fundo.png");
+  opacity: 40%;
+  border-radius: 1vh;
+}
+
+.randomIcon {
+  position: fixed;
+  margin-top: 2.5vw;
+  height: calc(calc(calc(calc(91vh - 3vw) / 3.5) * 2.5) / 5.5);
+  width: 6vw;
+}
+
+.aleatorioTexto {
+  width: 100%;
+  height: 10vw;
+  position: relative;
+  margin-top: calc(calc(calc(calc(91vh - 3vw) / 3.5) * 2.5) / 4);
+  font-size: 2vw;
+  display: flex;
+  font-weight: 700;
+  font-family: Helvetica;
+  color: rgb(255, 255, 255, 0.9);
+  text-align: center;
+  align-items: center;
+  text-shadow: 0vw 0.155vw #006565;
+  zoom: 0%;
+}
+
+/*--------------------------------------------------------------*/
+
+.descricao {
+  font-size: 2.5vh;
+  position: fixed;
+  margin-top: 23vw;
+}
+
+.descricaoAleatorio {
+  z-index: 0;
+  display: flex;
+  position: relative;
+  font-family: Helvetica;
+  width: 90%;
+  margin-bottom: 5vw;
+  text-align: center;
+  align-items: center;
+  font-size: 3vh;
+  letter-spacing: 0.3vh;
+  color: rgb(255, 255, 255, 0.65);
+}
