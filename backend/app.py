@@ -28,10 +28,9 @@ def search(pagina):
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-
-
-
-
+@app.route('/ping', methods=['GET'])
+def ping():
+    return jsonify({"status": "ok", "message": "API is running"}), 200
 
 @app.get("/detalhes/<int:id>")
 def detalhes(id):
