@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Homepage from "./Homepage";
+import Homepage from "./elements/maincontent/title/Homepage";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RandomFilmsPage from "./randomFilmsPage/RandomFilmsPage";
 
 const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
@@ -11,6 +13,12 @@ document.head.innerHTML +=
 
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/random_films" element={<RandomFilmsPage />} />
+        <Route path="/similar_films" element={<RandomFilmsPage />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );

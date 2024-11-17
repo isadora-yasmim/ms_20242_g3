@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./elements/header/header";
-import Footer from "./elements/footer/footer";
-import Main from "./elements/maincontent/main";
+import Header from "../../header/header";
+import Footer from "../../footer/footer";
+import Main from "../main";
 
 function Homepage() {
     return (

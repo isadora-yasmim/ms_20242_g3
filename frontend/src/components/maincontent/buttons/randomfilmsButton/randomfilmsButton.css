@@ -1,0 +1,38 @@
+ .randomfilmsButton {
+    display: flex;
+    width: 48vw;
+    height: 17vh;
+    justify-items: center;
+    align-items: center;
+    background-color: #064242;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 1vh;
+    transform:color 0.3s ease ;
+  }
+  
+  .randomfilmsButton:hover {
+    background-color: #012727;
+  }
+  
+
+.randomfilmsButton{
+    width: 48vw;
+    height: 17vh;
+    top: 47vh;
+    left: 0.4vw;
+}
+
+.imagemdefundo{
+    width: 48vw;
+    height: 17vh;
+    top: 47vh;
+    left: 0.4vw;
+    background-image: url("https://i.ibb.co/LQkx8Q4/imagem-fundo.png");
+    opacity: 0.2;
+}
+
+.logoaleatorio{
+    padding-top: 3.4vh;
+}
+
