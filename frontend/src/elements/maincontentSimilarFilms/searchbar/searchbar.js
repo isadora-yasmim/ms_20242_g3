@@ -1,5 +1,5 @@
 import React, { useState } from "react"; // Importa useState
-import { FaSearch } from "react-icons/fa"; // Importa o ícone de lupa
+import { FaSearch } from 'react-icons/fa';
 import "./searchbar.css"; // Importa o CSS
 
 const SearchBar = () => {
