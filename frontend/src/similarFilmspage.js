@@ -4,9 +4,9 @@ import Footer from './components/footer/footer';
 import Maincontent from './components/maincontentSimilarFilms/maincontent';
 
 
-function App() {
+function SimilarFilmsPage() {
   return (
-    <div className="App">
+    <div className="SimilarFilmsPage">
      <Header />
      <Maincontent/>
      <Footer />
