@@ -1,0 +1,28 @@
+.title{
+    position:relative;
+    top: 15vh;
+}
+
+.logo{
+   opacity: 0.4;
+   filter: blur(1.5px); 
+   width: 5vw; 
+   height: auto;
+   position: relative;
+}
+
+.conteudo{
+    color: #fff;
+    font-family: helvetica;
+    font-size:xx-large;
+    font-weight: bold;
+    font-style: italic;
+    width: 20vw; 
+    position:relative;
+    left: 40vw;
+    top: 3vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}

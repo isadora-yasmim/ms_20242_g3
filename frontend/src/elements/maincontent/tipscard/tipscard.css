@@ -1,12 +1,13 @@
+
 .tipscard {
   display: grid;
   justify-content: center;
   align-items: center;
   position: fixed;
   left: 4vw;
-  bottom: calc(3vh + 1vw);
+  bottom: calc(3vh + 0.5vw);
   background-color: #08272762;
-  height: calc(calc(calc(91vh - 3vw) / 3.5));
+  height: calc(calc(calc(91vh - 3vw) / 3.5) + 1vw);
   width: calc(100vw - 8vw);
   border-radius: 1vh;
 }
@@ -22,6 +23,7 @@
   left: 0vw;
   justify-content: center;
   width: calc(100vw - 8vw);
+  height: 3vh;
   border-top-left-radius: 1vh;
   border-top-right-radius: 1vh;
   border-color: #76abae;
@@ -45,4 +47,13 @@
 }
 .Poster {
   width: calc(100% / 10);
+  position: absolute;
+  margin-left: 1vw;
+  width: calc(100vw - 10vw);
+}
+.Poster {
+  margin-top: 0.2vw;
+  margin-right: 1vw;
+  height: calc(calc(calc(calc(91vh - 3vw) / 3.5) + 0.6vw) - 3vh);
+
 }
