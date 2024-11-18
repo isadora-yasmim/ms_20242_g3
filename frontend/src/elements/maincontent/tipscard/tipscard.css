@@ -1,0 +1,95 @@
+.tipscard {
+  display: grid;
+  justify-content: center;
+  position: fixed;
+  left: 4vw;
+  bottom: calc(3vh + 0.5vw);
+  background-color: #08272762;
+  height: calc(calc(calc(91vh - 3vw) / 3.5) + 1.5vw);
+  width: calc(100vw - 8vw);
+  border-radius: 1vh;
+}
+
+.tipscardButton {
+  display: flex;
+  background-color: #053434;
+  color: rgb(255, 255, 255, 0.8);
+  font-family: Helvetica;
+  font-size: 2vh;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  justify-content: center;
+  width: 100%;
+  height: 2.5vh;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  border-color: #76abae;
+}
+
+.botao-anterior,
+.botao-proximo {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  background: rgb(255, 255, 255, 0);;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.botao-anterior {
+  align-items: center;
+  justify-content: center;
+  left: 1vh;
+  width: 2vw;
+  height: 2vw;
+  transform: rotate(180deg);
+}
+
+.botao-proximo {
+  align-items: center;
+  justify-content: center;
+  right: 1vh;
+  width: 2vw;
+  height: 2vw;
+}
+
+.tips {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0%;
+  right: calc(2% + 2vw);
+  width: 90%;
+  height: 95%; /* ajuste para evitar rolagem vertical */
+  overflow-x: auto; /* scrollbar horizontal */
+  overflow-y: hidden; /* oculta scrollbar vertical */
+  display: flex;
+  flex-wrap: nowrap; /* não quebra linha */
+  justify-content: flex-start; /* alinha à esquerda */
+  gap: 4%;
+  padding: 0; /* remove espaçamento interno */
+  }
+
+  .Poster {
+    width: 25vw; /* ajuste o valor para caber na div .tipscard */
+    height: 90%; /* ajuste para manter proporção */
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 2vh;
+    }
+
+    .Poster:hover {
+      transform: scale(1.05);
+    }
+
+.tips::-webkit-scrollbar {
+  display: none;
+}
+.prox {
+  width: 100%;
+  height: 100%;
+  opacity: 90%;
+}
