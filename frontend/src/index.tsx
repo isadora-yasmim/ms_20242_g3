@@ -5,7 +5,7 @@ import Homepage from "./Homepage";
 const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
 
-document.body.style.backgroundColor = "#ffffff"; /*Cor de Fundo do documento*/
+document.body.style.backgroundColor = "#151719"; /*Cor de Fundo do documento*/
 
 root.render(
   <React.StrictMode>
