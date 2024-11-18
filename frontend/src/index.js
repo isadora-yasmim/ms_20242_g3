@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.tsx';
-import HomePage from './Homepage';
+import './similarFilmspage.css';
+import SimilarFilmsPage from './similarFilmspage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <SimilarFilmsPage />
   </React.StrictMode>
 );
 
