@@ -8,7 +8,7 @@
   display: grid;
   justify-items: center;
   position: fixed;
-  top: calc(6vh + 1vw);
+  top: calc(6vh + 0.5vw);
   left: 4vw;
   background: linear-gradient(180deg, #012727 40%, #000);
   height: calc(calc(calc(91vh - 3vw) / 3.5) * 2.5);
@@ -33,7 +33,7 @@
 
 /*---------------------------------------------------------------*/
 
-.logo {
+.logohome {
   z-index: 0;
   position: fixed;
   margin-top: 1.5vw;

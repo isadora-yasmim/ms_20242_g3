@@ -12,7 +12,7 @@ function Filteredfilms() {
       />
       <div className="tituloFiltro">
         <i className="filtroTextoTitulo">
-          <p>Recomendação por Filmes Similares</p>
+          <p>Filtre Seus Gostos</p>
         </i>
       </div>
       <div className="descricaofiltro">

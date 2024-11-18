@@ -8,11 +8,11 @@
   display: grid;
   justify-items: center;
   position: fixed;
-  top: calc(6vh + 1vw);
-  margin-left: calc(calc(calc(100vw - 12vw) / 3) + 5vw);
+  top: calc(6vh + 0.5vw);
+  margin-left: calc(calc(calc(100vw - 12vw) / 3) + 6vw);
   background: linear-gradient(180deg, #012727 40%, #000);
   height: calc(calc(calc(91vh - 3vw) / 3.5) * 2.5);
-  width: calc(calc(calc(100vw - 12vw) / 3) + 2vw);
+  width: calc(calc(100vw - 12vw) / 3);
   border-radius: 1vh;
 }
 
@@ -21,8 +21,9 @@
 }
 
 .imagemdefundofiltered {
+  z-index: 0;
   position: fixed;
-  width: calc(calc(calc(100vw - 12vw) / 3) + 2vw);
+  width: calc(calc(100vw - 12vw) / 3);
   height: calc(calc(calc(91vh - 3vw) / 3.5) * 2.5);
   background-image: url("https://i.ibb.co/LQkx8Q4/imagem-fundo.png");
   opacity: 40%;
