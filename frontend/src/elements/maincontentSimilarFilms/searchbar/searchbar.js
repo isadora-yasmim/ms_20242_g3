@@ -1,5 +1,4 @@
 import React, { useState } from "react"; // Importa useState
-
 import "./searchbar.css"; // Importa o CSS
 
 const SearchBar = () => {

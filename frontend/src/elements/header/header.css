@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.body {
-  background-color: #151719;
-  height: 100vh;
-}
-
 .header {
   display: flex;
   justify-content: center;
