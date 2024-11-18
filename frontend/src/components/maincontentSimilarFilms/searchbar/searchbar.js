@@ -1,5 +1,5 @@
 import React, { useState } from "react"; // Importa useState
-import { FaSearch } from "react-icons/fa"; // Importa o ícone de lupa
+
 import "./searchbar.css"; // Importa o CSS
 
 const SearchBar = () => {
@@ -24,7 +24,7 @@ const SearchBar = () => {
         value={searchText} // O valor do campo vem do estado
         onChange={handleInputChange} // Atualiza o estado ao digitar
       />
-      <FaSearch className="search-icon" onClick={handleSearch} /> {/* Ícone clicável */}
+      <img src="https://th.bing.com/th?id=OIP.J-NC5zdHendWhPtlgsY0LgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="lupa" className="search-icon" onClick={handleSearch} /> {/* Ícone clicável */}
     </div>
   );
 };

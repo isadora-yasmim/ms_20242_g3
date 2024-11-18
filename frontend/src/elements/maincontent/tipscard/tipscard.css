@@ -47,9 +47,7 @@
 }
 .Poster {
   width: calc(100% / 10);
-  position: absolute;
   margin-left: 1vw;
-  width: calc(100vw - 10vw);
 }
 .Poster {
   margin-top: 0.2vw;
