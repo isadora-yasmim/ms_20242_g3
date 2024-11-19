@@ -15,25 +15,25 @@ interface FilterProps {
 }
 
 const genres: Genre[] = [
-  { id: 28, name: "Action" },
-  { id: 12, name: "Adventure" },
-  { id: 16, name: "Animation" },
-  { id: 35, name: "Comedy" },
+  { id: 28, name: "Ação" },
+  { id: 12, name: "Aventura" },
+  { id: 16, name: "Animação" },
+  { id: 35, name: "Comédia" },
   { id: 80, name: "Crime" },
-  { id: 99, name: "Documentary" },
+  { id: 99, name: "Documentário" },
   { id: 18, name: "Drama" },
-  { id: 10751, name: "Family" },
-  { id: 14, name: "Fantasy" },
-  { id: 36, name: "History" },
+  { id: 10751, name: "Família" },
+  { id: 14, name: "Fantasia" },
+  { id: 36, name: "História" },
   { id: 27, name: "Horror" },
-  { id: 10402, name: "Music" },
-  { id: 9648, name: "Mystery" },
+  { id: 10402, name: "Musical" },
+  { id: 9648, name: "Místerio" },
   { id: 10749, name: "Romance" },
-  { id: 878, name: "Science Fiction" },
-  { id: 10770, name: "TV Movie" },
-  { id: 53, name: "Thriller" },
-  { id: 10752, name: "War" },
-  { id: 37, name: "Western" },
+  { id: 878, name: "Ficção científica" },
+  { id: 10770, name: "Filmes de televisão" },
+  { id: 53, name: "Suspense" },
+  { id: 10752, name: "Guerra" },
+  { id: 37, name: "Velho Oeste" },
 ];
 
 const FiltrosFilmes: React.FC<FilterProps> = ({ onFilter }) => {
@@ -58,9 +58,9 @@ const FiltrosFilmes: React.FC<FilterProps> = ({ onFilter }) => {
 
   return (
     <div className="filtro-container">
-    <h2>Filter Movies</h2>
+    <h2>Filtrar Filmes</h2>
     <div className="filtro-section">
-      <h3>Genres</h3>
+      <h3>Gênero</h3>
       <div>
         {genres.map((genre) => (
           <label key={genre.id}>
@@ -77,7 +77,7 @@ const FiltrosFilmes: React.FC<FilterProps> = ({ onFilter }) => {
     </div>
   
     <div className="filtro-section">
-      <h3>Runtime</h3>
+      <h3>Duração</h3>
       <input
         type="number"
         min="1"
@@ -87,17 +87,17 @@ const FiltrosFilmes: React.FC<FilterProps> = ({ onFilter }) => {
     </div>
   
     <div className="filtro-section">
-      <h3>Include Adult Content</h3>
+      <h3>Incluir conteúdo adulto</h3>
       <label>
         <input
           type="checkbox"
           checked={includeAdult}
           onChange={(e) => setIncludeAdult(e.target.checked)}
         />
-        Include Adult
+        Incluir conteúdo adulto
       </label>
     </div>
-    <button onClick={handleFilter}>Filter</button>
+    <button onClick={handleFilter}>Filtrar</button>
   </div>  
   );
 };
