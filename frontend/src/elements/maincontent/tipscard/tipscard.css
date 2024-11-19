@@ -68,7 +68,7 @@
   display: flex;
   flex-wrap: nowrap; /* não quebra linha */
   justify-content: flex-start; /* alinha à esquerda */
-  gap: 4%;
+  gap: 3vw;
   padding: 0; /* remove espaçamento interno */
   }
 

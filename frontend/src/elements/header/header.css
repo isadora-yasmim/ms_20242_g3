@@ -21,3 +21,7 @@
   font-family: Helvetica; /*Helvetica*/
   zoom: 0%;
 }
+
+.linkheader {
+  text-decoration: none;
+}
