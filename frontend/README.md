@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# Organização das páginas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para não gerar conflito e ficar tudo organizado, os arquivos das novas páginas deve estar da seguinte forma especificada abaixo.
 
-## Available Scripts
+## Elementos usados na página
 
-In the project directory, you can run:
+Os elementos usados na página devem ser guardados na pasta "elements". Assim, caso vá usar algum elemento já existente, basta importá-lo; caso vá criar um novo, basta criar uma pasta com o nome do elemento dentro da pasta "elements" e adicioná-lo lá.
 
-### `npm start`
+## Páginas completas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+As páginas já prontas devem ficar na página components.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Arquivos App e Index .tsx
 
-### `npm test`
+Esses arquivos são a estrutura de todo o site, organizando as páginas e criando rotas para elas.
+O App.tsx devem ser usado para definir as rotas as páginas. Nele está definido a página padrão que deve ser carregada - a HomePage.
+As outras páginas serão acessadas através do link que será usado nos elementos da HomePage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Estrutura de elementos no projeto
 
-### `npm run build`
+projeto-react/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── .github/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+├── node_modules/ 
 
-### `npm run eject`
+├── public/                          \__ Arquivos estáticos (ícones, imagens, etc.)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+│   ├── index.html                   \__ Página inicial do projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+│   ├── favicon.ico                  \__ Ícone do projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+├── src/                  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+│   ├── components/                  \__ Arquivos com a página já montada
 
-## Learn More
+│   │   ├── homepage.tsx
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+│   │   ├── similarfilmsPage.tsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+│   │   └── ...
+
+│   ├── elements/                    \__ Elementos usados nas páginas
+
+│   │   ├── footer/
+
+│   │   │   ├── footer.tsx
+
+│   │   │   ├── footer.css
+
+│   │   │   └── ... 
+
+│   │   └── ...
+│   ├── App.tsx                      \__ Componente principal - onde definimos as rotas(caminhos para as páginas) e a rota padrão(que é a homepage)
+
+│   ├── index.tsx                    \__ arquivo que renderiza o site(só deve ter um arquivo que renderiza, podem ter outros index, mas apenas para 
+
+│   └── ...                             exportação de componentes ou páginas.
+
+│   └── ...
+├── .gitignore             \__ Arquivos ignorados pelo Git - adicionar o que não deve subir para o projeto
+
+├── package.json           \__ Dependências e scripts do projeto - não é necessário mexer, geralmente
+
+├── README.md              \__ Documentação do projeto
+
+└── tsconfig.json          \__ Configuração do TypeScript
+
