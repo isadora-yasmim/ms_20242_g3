@@ -1,0 +1,17 @@
+.texto {
+    color: #fff;
+    font-family: helvetica;
+    font-size: medium;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 0.4vw;
+    width: 18vw;
+    position: relative;
+    left: 41vw;
+    top: 10vh; /* Ajuste para evitar sobreposição */
+    opacity: 0.95;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
