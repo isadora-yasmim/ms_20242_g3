@@ -1,0 +1,148 @@
+/* Container */
+.randomFilmsPage6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Header */
+.randomFilmsPage6-header {
+  width: 100%;
+  background-color: #003d3d;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+/* Main Content */
+.randomFilmsPage6-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.randomFilmsPage6-title {
+  margin-top: 45px; /* Adiciona espaço acima do título */
+}
+
+.randomFilmsPage6-description {
+  color: #ccc;
+  margin-bottom: 20px;
+  transform: translateY(35px); /* Move o componente 50px para baixo */
+  position: relative; /* Permite deslocar o elemento */
+  top: -200px; /* Move para cima */
+}
+
+
+/* Footer */
+.randomFilmsPage6-footer {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px 0;
+}
+
+.bottombar {
+  background-color: #012727;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /*Largura = vw = 1vw = 1% da largura*/
+  height: 3vh; /*Altura = vh = 1vh = 1% da altura */
+}
+
+/* Botão desativado, mas com cor original */
+.randomFilmsPage6-random-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0a4e43; /* Cor original do botão */
+  font-size: 16px;
+  cursor: pointer; /* Garante a "mãozinha" */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: -65px; /* Move o botão para baixo (o retangulo é movido)*/
+  margin-left: 750px; /* Move o botão para a direita */
+  position: relative;
+  top: 10px; /* Move o botão para baixo */
+  }
+  
+  /* Efeito hover */
+  .randomFilmsPage6-random-button:hover {
+  background-color: #00937a;
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+  }
+
+/* Symbol Image */
+.randomFilmsPage6-symbol-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 210px;
+  position: relative;
+  top: 100;
+  transform: translateY(40px); /* Move o componente 50px para baixo */
+}
+
+.randomFilmsPage6-movie-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003d3d; /* Azul escuro */
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px; /* Ajuste conforme necessário */
+  color: #ccc; /* Cor do texto */
+  position: relative;
+  margin-top: -200px;
+  transform: translateY(25px); /* Move o componente 50px para baixo */
+  width: 750px; /* Define a largura desejada */
+  height: 280px; /* Define a altura desejada */
+}
+
+
+.randomFilmsPage6-movie-card-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.randomFilmsPage6-movie-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.randomFilmsPage6-movie-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.randomFilmsPage6-movie-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 140px; /* Aumenta o espaço acima do "Movie Details" */
+}
+
+.randomFilmsPage6-movie-details span {
+  margin-right: 10px;
+  color: #ccc;
+}
+
+.randomFilmsPage6-movie-poster {
+  width: 170px;
+  height: auto;
+  border-radius: 5px;
+}

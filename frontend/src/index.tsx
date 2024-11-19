@@ -3,6 +3,10 @@ import ReactDOM from "react-dom/client";
 import Homepage from "./elements/maincontent/title/Homepage";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RandomFilmsPage from "./randomFilmsPage/RandomFilmsPage";
+import RandomFilmsPage3 from "./randomFilmsPage3/RandomFilmsPage3";
+import RandomFilmsPage5 from "./randomFilmsPage5/RandomFilmsPage5";
+import RandomFilmsPage6 from "./randomFilmsPage6/RandomFilmsPage6";
+
 
 const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
@@ -18,6 +22,10 @@ root.render(
         <Route path="/" element={<Homepage />} />
         <Route path="/random_films" element={<RandomFilmsPage />} />
         <Route path="/similar_films" element={<RandomFilmsPage />} />
+        <Route path="/randomFilmsPage3" element={<RandomFilmsPage3 />} />
+        <Route path="/randomFilmsPage5" element={<RandomFilmsPage5 />} />
+        <Route path="/randomFilmsPage6/:FilmId" element={<RandomFilmsPage6 />} />
+
       </Routes>
     </Router>
   </React.StrictMode>

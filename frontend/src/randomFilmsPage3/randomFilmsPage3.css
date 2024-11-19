@@ -1,0 +1,121 @@
+/* Container */
+.randomFilmsPage3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Header */
+.randomFilmsPage3-header {
+  width: 100%;
+  background-color: #003d3d;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+/* Main Content */
+.randomFilmsPage3-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.randomFilmsPage3-title {
+  margin-bottom: 10px;
+}
+
+.randomFilmsPage3-description {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.randomFilmsPage3-footer {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px 0;
+}
+
+/* Bottom Buttons */
+.randomFilmsPage3-bottom-button {
+  background-color: #003d3d;
+  border: 2px solid #005c5c;
+  width: 415px;
+  height: 90px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomFilmsPage3-bottom-button:hover {
+  background-color: #00937a;
+}
+
+/* Symbol Image */
+.randomFilmsPage3-symbol-image {
+  width: 100px;
+  height: 100px;
+}
+
+/* Botão desativado, mas com cor original */
+.randomFilmsPage3-random-button:disabled {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0a4e43; /* Cor original do botão */
+  font-size: 16px;
+  cursor: not-allowed; /* Cursor indicando que o botão está desativado */
+  box-shadow:none
+  
+  }
+  
+  /* Efeito hover */
+  .randomFilmsPage3-random-button:hover {
+  background-color: #00937a;
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+  }
+
+  .bottombar {
+    background-color: #012727;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /*Largura = vw = 1vw = 1% da largura*/
+    height: 3vh; /*Altura = vh = 1vh = 1% da altura */
+  }
+  
+  /* Loading Spinner */
+  .randomFilmsPage3-loading-spinner {
+  margin-top: 20px;
+  border: 6px solid #ccc; /* Cor do anel externo */
+  border-top: 6px solid #00937a; /* Cor do anel ativo */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  }
+  
+  /* Animação de rotação */
+  @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  }

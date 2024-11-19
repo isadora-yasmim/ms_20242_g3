@@ -1,87 +1,131 @@
 /* Container */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    background-color: #111;
-    color: #fff;
-  }
-  
-  /* Header */
-  .header {
-    width: 100%;
-    background-color: #003d3d;
-    color: #fff;
-    padding: 10px 0;
-    font-size: 24px;
-  }
-  
-  /* Main Content */
-  .main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px;
-  }
-  
-  .title {
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    color: #ccc;
-    margin-bottom: 20px;
-  }
-  
-  /* Random Button */
-  .random-button {
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #00b394;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-  }
-  
-  .random-button:hover {
-    background-color: #00937a;
-  }
-  
-  /* Footer */
-  .footer {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    padding: 20px 0;
-  }
-  
-  /* Bottom Buttons */
-  .bottom-button {
-    background-color: #003d3d;
-    border: 2px solid #005c5c;
-    width: 415px;
-    height: 90px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .bottom-button:hover {
-    background-color: #00937a;
-  }
-  
-  /* Symbol Image */
-  .symbol-image {
-    width: 100px;
-    height: 100px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: #003d3d;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Random Button */
+.random-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00b394;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.random-button:hover {
+  background-color: #0a4e43;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px 0;
+}
+
+.bottombar {
+  background-color: #012727;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /*Largura = vw = 1vw = 1% da largura*/
+  height: 3vh; /*Altura = vh = 1vh = 1% da altura */
+}
+
+/* Bottom Buttons */
+.bottom-button {
+  background-color: #00b394;
+  border: 2px solid #00b394;
+  width: 415px;
+  height: 90px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Symbol Image */
+.symbol-image {
+  width: 100px;
+  height: 100px;
+}
+
+.filteredfilmsButton {
+  display: flex;
+  width: 48vw;
+  height: 17vh;
+  justify-items: center;
+  align-items: center;
+  background-color: #064242;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 1vh;
+  transform:color 0.3s ease ;
+}
+
+.filteredfilmsButton:hover {
+  background-color: #012727;
+}
+
+
+.filteredfilmsButton{
+  width: 48vw;
+  height: 17vh;
+  top: 10vh;
+  left: 50vw;
+}
+.imagemdefundo2{
+  width: 48vw;
+  height: 17vh;
+  top: 10vh;
+  left: 0.4vw;
+  background-image: url("https://i.ibb.co/LQkx8Q4/imagem-fundo.png");
+  opacity: 0.2;
+}
+
+.logofiltros{
+  padding-top: 3.4vh;
+}
