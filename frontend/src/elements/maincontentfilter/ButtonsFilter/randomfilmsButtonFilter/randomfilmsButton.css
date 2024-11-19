@@ -1,0 +1,37 @@
+.randomfilmsButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -7vh 0vh; /* Centraliza verticalmente e horizontalmente */
+    background-color: #064242;
+    width: 15%; /* Use percentuais para melhor responsividade */
+    height: 10vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+    .randomfilmsButton:hover {
+      background-color: #012727;
+    }
+    
+  
+  .randomfilmsButton{
+      width: 48vw;
+      height: 15vh;
+      top: 50vh;
+      left: 1.0vw;
+  }
+  
+  .imagemdefundo{
+      width: 48vw;
+      height: 15vh;
+      top: 47vh;
+      left: 0.4vw;
+      background-image: url("https://i.ibb.co/LQkx8Q4/imagem-fundo.png");
+      opacity: 0.2;
+  }
+  
+  .logoaleatorio{
+      padding-top: 1vh;
+
+  }

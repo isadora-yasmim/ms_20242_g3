@@ -1,8 +1,8 @@
 import React from "react";
-import Title from "./Title/title";
-import DescriptionFilter from "./Description/description";
-import RandomFilmsButton from "./Buttons/randomfilmsButton/randomfilmsButton";
-import SimilarFilmsButton from "./Buttons/similarfilmsButton/similarfilmsButton";
+import TitleFilter from "./Titlefilter/titlefilter";
+import DescriptionFilter from "./Descriptionfilter/descriptionfilter";
+import RandomFilmsButtonFilter from "./ButtonsFilter/randomfilmsButtonFilter/randomfilmsButton";
+import SimilarFilmsButtonFilter from "./ButtonsFilter/similarfilmsButtonFilter/similarfilmsButton";
 import FiltrosFilmes from "./FiltrosPaste/filtro"
 
 const MaincontentFilter: React.FC = () => {
@@ -17,11 +17,11 @@ const MaincontentFilter: React.FC = () => {
   };
     return (
       <div className="Maincontent">
-       <Title/>
+       <TitleFilter/>
        <DescriptionFilter/>
        <FiltrosFilmes  onFilter={handleFilter} />
-       <RandomFilmsButton/>
-       <SimilarFilmsButton/>
+       <RandomFilmsButtonFilter/>
+       <SimilarFilmsButtonFilter/>
       </div>
     );
   }

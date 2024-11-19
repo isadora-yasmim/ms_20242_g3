@@ -1,12 +1,22 @@
 /* filtro.css */
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .filtro-container {
   background-color: #2f4f4f; /* Verde escuro */
   color: #f5f5f5; /* Cinza claro para contraste */
   padding: 20px;
   border-radius: 10px;
   font-family: Arial, sans-serif;
-  max-width: 600px;
+  max-width: 500px;
   margin: 20px auto;
 }
 

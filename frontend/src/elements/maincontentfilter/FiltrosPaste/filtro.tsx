@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./filtro"
+import "./filtro.css"
 
 interface Genre {
   id: number;
