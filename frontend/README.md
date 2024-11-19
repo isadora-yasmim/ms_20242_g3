@@ -1,6 +1,6 @@
 # Organização das páginas
 
-Para não gerar conflito e ficar tudo organizado, os arquivos das novas páginas deve estar da seguinte forma especificada abaixo.
+Para não gerar conflito e ficar tudo organizado, os arquivos das novas páginas devem estar da forma especificada abaixo.
 
 ## Elementos usados na página
 
