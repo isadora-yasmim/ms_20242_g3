@@ -1,0 +1,31 @@
+.recomendation{
+    position: absolute;
+    top: 32vh;
+    left: 20vw;
+    max-width: 60vw;
+    max-height: 60vh;
+    width: 60vw;
+    height: 60vh;
+}
+
+.mensagemrecomendacao{
+    color: #fff;
+    font-family: helvetica;
+    font-size:medium;
+    font-weight:100;
+    font-style: italic;
+    letter-spacing: 0.4vw;
+    position:relative;
+    top: 3vh;
+    opacity: 0.95;
+    text-align: center;
+    justify-content: center;
+}
+
+.recomendationcard{
+    background-color: #0a4e43;
+    width: 60vw;
+    height: 55vh;
+    top: 8vh;
+    position: absolute;
+}
