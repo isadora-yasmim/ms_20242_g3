@@ -3,7 +3,7 @@
   justify-content: center;
   position: fixed;
   left: 4vw;
-  bottom: calc(3vh + 0.5vw);
+  bottom: 3vh;
   background-color: #08272762;
   height: calc(calc(calc(91vh - 3vw) / 3.5) + 1.5vw);
   width: calc(100vw - 8vw);
