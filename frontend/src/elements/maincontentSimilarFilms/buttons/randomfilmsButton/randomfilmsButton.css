@@ -4,8 +4,8 @@
     height: 17vh;
     justify-items: center;
     align-items: center;
-    position: relative;
-    top: 47vh;
+    position: absolute;
+    top: 45vh;
     left: 0.4vw;
     background-color: #064242;
     height: 5vh;
@@ -22,7 +22,7 @@
 .randomfilmsButton{
     width: 48vw;
     height: 17vh;
-    top: 47vh;
+    top: 75vh;
     left: 0.4vw;
 }
 
@@ -36,6 +36,6 @@
 }
 
 .logoaleatorio{
-    padding-top: 3.4vh;
+  padding: 3.4vh 22.5vw;
 }
 

@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import SimilarFilmsPage from './components/similarFilmspage';
+import SimilarLoadingPage from "./components/similarLoadingpage";
+import SimilarSearchingPage from './components/similarSearchingpage';
+
 
 function App() {
   return (
@@ -8,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/filmes-similares" element={<SimilarFilmsPage />} />
+        <Route path="/procurando-similares" element={<SimilarSearchingPage />} />
+        <Route path="/carregandoSimilarfilm" element={<SimilarLoadingPage />} />
       </Routes>
     </BrowserRouter>
   );

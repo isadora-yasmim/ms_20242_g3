@@ -1,17 +1,17 @@
 .filteredfilmsButton {
-    display: flex;
-    width: 48vw;
-    height: 17vh;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-    top: 50vh;
-    left: 51vw;
-    background-color: #064242;
-    height: 5vh;
-    width: 10vw;
-    border-radius: 1vh;
-    transform:color 0.3s ease ;
+  display: flex;
+  width: 48vw;
+  height: 17vh;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 45vh;
+  left: 0.4vw;
+  background-color: #064242;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 1vh;
+  transform:color 0.3s ease ;
   }
   
 .filteredfilmsButton:hover {
@@ -22,7 +22,7 @@
 .filteredfilmsButton{
     width: 48vw;
     height: 17vh;
-    top: 30vh;
+    top: 75vh;
     left: 50vw;
 }
 .imagemdefundo2{
@@ -35,5 +35,5 @@
 }
 
 .logofiltros{
-    padding-top: 3.4vh;
+    padding: 3.4vh 22.5vw;
 }
