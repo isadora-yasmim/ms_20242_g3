@@ -3,6 +3,7 @@ import Homepage from './components/Homepage';
 import SimilarFilmsPage from './components/similarFilmspage';
 import SimilarLoadingPage from "./components/similarLoadingpage";
 import SimilarSearchingPage from './components/similarSearchingpage';
+import SimilarFinalRecomendation from "./components/similarfinalRecomendation";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/filmes-similares" element={<SimilarFilmsPage />} />
         <Route path="/procurando-similares" element={<SimilarSearchingPage />} />
-        <Route path="/carregandoSimilarfilm" element={<SimilarLoadingPage />} />
+        <Route path="/carregando-similares" element={<SimilarLoadingPage />} />
+        <Route path="/recomendacao-similares" element={<SimilarFinalRecomendation />} />
       </Routes>
     </BrowserRouter>
   );
