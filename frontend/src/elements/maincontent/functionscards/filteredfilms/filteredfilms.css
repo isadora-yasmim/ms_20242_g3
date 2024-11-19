@@ -8,7 +8,7 @@
   display: grid;
   justify-items: center;
   position: fixed;
-  top: calc(6vh + 0.5vw);
+  top: calc(6vh + 0.75vw);
   margin-left: calc(calc(calc(100vw - 12vw) / 3) + 6vw);
   background: linear-gradient(180deg, #012727 40%, #000);
   height: calc(calc(calc(91vh - 3vw) / 3.5) * 2.5);

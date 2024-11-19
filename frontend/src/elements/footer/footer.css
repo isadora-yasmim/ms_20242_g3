@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw; /*Largura = vw = 1vw = 1% da largura*/
-  height: 3vh; /*Altura = vh = 1vh = 1% da altura */
+  height: calc(3vh - 0.5vw); /*Altura = vh = 1vh = 1% da altura */
 }
 
 .copyright {

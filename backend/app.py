@@ -16,22 +16,27 @@ app = Flask(__name__)
 def filmes(pagina):
     # retorna o request com um json com a lista de filmes naquela página
     # os filmes estão ordenados por popularidade
-    return jsonify(listafilmes(pagina))
+    response = jsonify(listafilmes(pagina))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.post("/search/<int:pagina>")
 def search(pagina):
     params = request.get_json(force=True)
     print(request.data, file=sys.stderr)
-    return jsonify(busca(params, pagina))
+    response = jsonify(busca(params, pagina))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
-
-
-
-
+@app.route('/ping', methods=['GET'])
+def ping():
+    return jsonify({"status": "ok", "message": "API is running"}), 200
 
 @app.get("/detalhes/<int:id>")
 def detalhes(id):
-    return jsonify(detalhesfilme(id))
+    response = jsonify(detalhesfilme(id))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 @app.get("/aleatorio")
@@ -41,7 +46,9 @@ def aleatorio():
             id = random.randint(2, 824845)
             dados = detalhesfilme(id)
             if dados['poster'] is not None:  #and (dados['sinopse'] != ""):
-                return jsonify(dados)
+                response = jsonify(dados)
+                response.headers.add('Access-Control-Allow-Origin', '*')
+                return response
         except Exception as e:
             print(f"Erro ao buscar dados para o ID {id}: {e}")
             continue
@@ -53,15 +60,21 @@ def aleatorio():
 
 @app.post("/recomendacao")
 def recomendacao():
-    return recomendarfilmes(request.json)
+
+    response = recomendarfilmes(request.json)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 @app.post("/recomendacaofiltrada")
 def recomendacaofiltrada():
+
     params = request.get_json(force=True)
     print(request.data, file=sys.stderr)
     idfilme = filtrada(params)
-    return jsonify(detalhesfilme(idfilme))
+    response = jsonify(detalhesfilme(idfilme))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 if __name__ == '__main__':
