@@ -11,7 +11,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/homepage" element={<Homepage />} />
         <Route path="/filmes-similares" element={<SimilarFilmsPage />} />
         <Route path="/filmes-filtros" element={<FilterfilmPage />} />
         <Route path="/procurando-similares" element={<SimilarSearchingPage />} />
