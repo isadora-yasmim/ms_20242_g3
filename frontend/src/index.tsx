@@ -5,7 +5,7 @@ import App from "./App";
 const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
 
-document.body.style.backgroundColor = "#000000"; /*Cor de Fundo do documento*/
+document.body.style.backgroundColor = "#222222"; /*Cor de Fundo do documento*/
 
 root.render(
   <React.StrictMode>

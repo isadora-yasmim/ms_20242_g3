@@ -1,0 +1,42 @@
+.geraloading{
+    top: 70vh;
+    left: 40vw;
+    max-width: 50vw;
+    position: absolute;
+}
+
+.mensagemloading{
+    color: #fff;
+    font-family: helvetica;
+    font-size:medium;
+    font-weight:100;
+    font-style: italic;
+    letter-spacing: 0.4vw;
+    width: 20vw; 
+    position:relative;
+    opacity: 0.95;
+    text-align: center;
+    justify-content: center;
+}
+
+.loading{
+    border: 6px solid #ccc; /* Cor do anel externo */
+    border-top: 6px solid #00937a; /* Cor do anel ativo */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; 
+    top: -8vh;
+    left: 8vw;
+    position: absolute;
+}
+
+ /* Animação de rotação */
+ @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+    }
