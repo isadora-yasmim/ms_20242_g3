@@ -1,0 +1,13 @@
+.App {
+    text-align: center;
+    background-color: #242727;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body, html {
+    height: 100%; /* Garante que o body ocupe toda a altura */
+    margin: 0;
+  }
+  
