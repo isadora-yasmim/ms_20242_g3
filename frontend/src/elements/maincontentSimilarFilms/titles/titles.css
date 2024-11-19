@@ -1,17 +1,18 @@
-.title{
+.titles{
     position:absolute;
     top: 15vh;
     left: 40vw;
 }
 
-.logo{
+.logos{
    width: 5vw; 
    height: auto;
    position: relative;
+   left: 7.5vw;
 }
 
 
-.tituloSimilar{
+.tituloSimilars{
     color: #fff;
     font-family: helvetica;
     font-size:xx-large;
