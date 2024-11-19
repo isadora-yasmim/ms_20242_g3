@@ -47,7 +47,7 @@ function Movies() {
       <div className="tipscardButton">Tops da Semana</div>
       <button className="botao-anterior" onClick={handleAnterior}>
       <img
-        src="https://i.ibb.co/xMsGYBL/image.png"
+        src="https://i.ibb.co/djmD8dS/right-arrow.png"
         alt="Semelhante aos filmes selecionados"
         className="prox"
       />
@@ -59,7 +59,7 @@ function Movies() {
       </div>
       <button className="botao-proximo" onClick={handleProximo}>
       <img
-        src="https://i.ibb.co/xMsGYBL/image.png"
+        src="https://i.ibb.co/djmD8dS/right-arrow.png"
         alt="Semelhante aos filmes selecionados"
         className="prox"
       />
