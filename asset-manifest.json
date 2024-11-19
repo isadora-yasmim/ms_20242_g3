@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ms_20242_g3/static/css/main.2ca336ee.css",
+    "main.js": "/ms_20242_g3/static/js/main.d997c19d.js",
+    "index.html": "/ms_20242_g3/index.html",
+    "main.2ca336ee.css.map": "/ms_20242_g3/static/css/main.2ca336ee.css.map",
+    "main.d997c19d.js.map": "/ms_20242_g3/static/js/main.d997c19d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ca336ee.css",
+    "static/js/main.d997c19d.js"
+  ]
+}
